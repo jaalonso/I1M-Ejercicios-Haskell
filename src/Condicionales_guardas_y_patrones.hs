@@ -98,7 +98,7 @@ xor4 x y = x /= y
 -- altura 3.
 --
 -- Definir la función
---    mayorRectangulo :: (Num a, Ord a) => (a,a) -> (a,a) -> (a,a)
+--    mayorRectangulo :: (Integer,Integer) -> (Integer,Integer) -> (Integer,Integer)
 -- tal que (mayorRectangulo r1 r2) es el rectángulo de mayor área entre
 -- r1 y r2. Por ejemplo,
 --    mayorRectangulo (4,6) (3,7)  ==  (4,6)
@@ -106,7 +106,7 @@ xor4 x y = x /= y
 --    mayorRectangulo (4,6) (3,9)  ==  (3,9)
 -- ---------------------------------------------------------------------
 
-mayorRectangulo :: (Num a, Ord a) => (a,a) -> (a,a) -> (a,a)
+mayorRectangulo :: (Integer,Integer) -> (Integer,Integer) -> (Integer,Integer)
 mayorRectangulo (a,b) (c,d)
   | a*b >= c*d = (a,b)
   | otherwise  = (c,d)
@@ -183,7 +183,7 @@ numeroDeRaices :: Double -> Double -> Double -> Int
 numeroDeRaices a b c | d < 0     = 0
                      | d == 0    = 1
                      | otherwise = 2
-    where d = b**2-4*a*c
+  where d = b**2-4*a*c
 
 -- 2ª solución
 numeroDeRaices2 :: Double -> Double -> Double -> Int
@@ -227,7 +227,7 @@ area a b c = sqrt (s*(s-a)*(s-b)*(s-c))
   where s = (a+b+c)/2
 
 -- ---------------------------------------------------------------------
--- Ejercicio 11.1. Los intervalos cerrados se pueden representar mediante
+-- Ejercicio 11. Los intervalos cerrados se pueden representar mediante
 -- una lista de dos números (el primero es el extremo inferior del
 -- intervalo y el segundo el superior).
 --

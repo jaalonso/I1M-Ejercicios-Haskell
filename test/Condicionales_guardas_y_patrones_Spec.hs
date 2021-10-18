@@ -70,7 +70,7 @@ spec = do
     it "e4" $
       xor4 False False `shouldBe` False
 
-  describe "xor4" $ do
+  describe "mayorRectangulo" $ do
     it "e1" $
       mayorRectangulo (4,6) (3,7)  `shouldBe`  (4,6)
     it "e2" $
@@ -80,9 +80,9 @@ spec = do
 
   describe "intercambia" $ do
     it "e1" $
-      intercambia (2,5)  `shouldBe`  (5,2)
+      intercambia ((2,5) :: (Int,Int))  `shouldBe`  (5,2)
     it "e2" $
-      intercambia (5,2)  `shouldBe`  (2,5)
+      intercambia ((5,2) :: (Int,Int)) `shouldBe`  (2,5)
 
   describe "distancia" $
     it "e1" $
@@ -90,17 +90,23 @@ spec = do
 
   describe "ciclo" $ do
     it "e1" $
-      ciclo [2,5,7,9]  `shouldBe` [9,2,5,7]
+      ciclo [2::Int,5,7,9]  `shouldBe` [9,2,5,7]
     it "e2" $
       ciclo ([] :: [Int]) `shouldBe` []
     it "e3" $
-      ciclo [2]        `shouldBe` [2]
+      ciclo [2::Int]        `shouldBe` [2]
 
   describe "numeroMayor" $ do
     it "e1" $
-      numeroMayor 2 5 `shouldBe`  52
+      numeroMayor (2::Int) 5 `shouldBe`  52
     it "e2" $
-      numeroMayor 5 2 `shouldBe`  52
+      numeroMayor (5::Int) 2 `shouldBe`  52
+
+  describe "numeroMayor2" $ do
+    it "e1" $
+      numeroMayor2 (2::Int) 5 `shouldBe`  52
+    it "e2" $
+      numeroMayor2 (5::Int) 2 `shouldBe`  52
 
   describe "numeroDeRaices" $ do
     it "e1" $
@@ -109,6 +115,14 @@ spec = do
       numeroDeRaices 4 4 1    `shouldBe`  1
     it "e2" $
       numeroDeRaices 5 23 12  `shouldBe`  2
+
+  describe "numeroDeRaices2" $ do
+    it "e1" $
+      numeroDeRaices2 2 0 3    `shouldBe`  0
+    it "e2" $
+      numeroDeRaices2 4 4 1    `shouldBe`  1
+    it "e2" $
+      numeroDeRaices2 5 23 12  `shouldBe`  2
 
   describe "raices" $ do
     it "e1" $
@@ -124,21 +138,21 @@ spec = do
 
   describe "interseccion" $ do
     it "e1" $
-      interseccion [] [3,5]     `shouldBe`  []
+      interseccion [] [3::Int,5]     `shouldBe`  []
     it "e2" $
-      interseccion [3,5] []     `shouldBe`  []
+      interseccion [3::Int,5] []     `shouldBe`  []
     it "e3" $
-      interseccion [2,4] [6,9]  `shouldBe`  []
+      interseccion [2::Int,4] [6,9]  `shouldBe`  []
     it "e4" $
-      interseccion [2,6] [6,9]  `shouldBe`  [6,6]
+      interseccion [2::Int,6] [6,9]  `shouldBe`  [6,6]
     it "e5" $
-      interseccion [2,6] [0,9]  `shouldBe`  [2,6]
+      interseccion [2::Int,6] [0,9]  `shouldBe`  [2,6]
     it "e6" $
-      interseccion [2,6] [0,4]  `shouldBe`  [2,4]
+      interseccion [2::Int,6] [0,4]  `shouldBe`  [2,4]
     it "e7" $
-      interseccion [4,6] [0,4]  `shouldBe`  [4,4]
+      interseccion [4::Int,6] [0,4]  `shouldBe`  [4,4]
     it "e8" $
-      interseccion [5,6] [0,4]  `shouldBe`  []
+      interseccion [5::Int,6] [0,4]  `shouldBe`  []
 
   describe "formaReducida" $ do
     it "e1" $

@@ -30,6 +30,7 @@ library
       Definiciones_por_composicion
       Definiciones_por_comprension
       Definiciones_por_recursion
+      Operaciones_conjuntistas_con_listas
   other-modules:
       Paths_I1M_Ejercicios_Haskell
   hs-source-dirs:
@@ -58,6 +59,7 @@ test-suite spec
       Definiciones_por_composicion_Spec
       Definiciones_por_comprension_Spec
       Definiciones_por_recursion_Spec
+      Operaciones_conjuntistas_con_listas_Spec
       Paths_I1M_Ejercicios_Haskell
   hs-source-dirs:
       test

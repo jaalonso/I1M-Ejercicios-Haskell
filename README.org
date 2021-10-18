@@ -5,3 +5,4 @@ Sevilla) son las siguientes:
 2. [[./src/Condicionales_guardas_y_patrones.hs][Definiciones con condicionales, guardas o patrones]].
 3. [[./src/Definiciones_por_comprension.hs][Definiciones por comprensión]].
 4. [[./src/Definiciones_por_recursion.hs][Definiciones por recursión]].
+5. [[./src/Operaciones_conjuntistas_con_listas.hs][Operaciones conjuntistas con listas]].

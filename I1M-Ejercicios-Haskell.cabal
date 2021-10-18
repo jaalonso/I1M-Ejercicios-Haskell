@@ -1,0 +1,73 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.34.4.
+--
+-- see: https://github.com/sol/hpack
+
+name:           I1M-Ejercicios-Haskell
+version:        0.1.0.0
+synopsis:       Ejercicios de programación funcional con Haskell
+description:    Relaciones de ejercicios de programación funcional con Haskell de la asignatura I1M (Informática de 1º del Grado en Matemáticas de la Universidad de Sevilla).
+category:       Educational
+homepage:       https://github.com/jaalonso/I1M-Ejercicios-Haskell#readme
+bug-reports:    https://github.com/jaalonso/I1M-Ejercicios-Haskell/issues
+author:         Jose A. Alonso
+maintainer:     JoseA.Alonso@gmail.com
+copyright:      Jose A. Alonso
+license:        BSD3
+license-file:   LICENSE
+build-type:     Simple
+extra-source-files:
+    README.org
+
+source-repository head
+  type: git
+  location: https://github.com/jaalonso/I1M-Ejercicios-Haskell
+
+library
+  exposed-modules:
+      Condicionales_guardas_y_patrones
+      Definiciones_por_composicion
+  other-modules:
+      Paths_I1M_Ejercicios_Haskell
+  hs-source-dirs:
+      src
+  ghc-options: -Wall -fno-warn-type-defaults
+  build-depends:
+      I1M
+    , QuickCheck
+    , array
+    , base >=4.7 && <5
+    , containers
+    , gnuplot
+    , hspec
+    , hspec-core
+    , matrix
+    , primes
+    , random
+    , vector
+  default-language: Haskell2010
+
+test-suite spec
+  type: exitcode-stdio-1.0
+  main-is: Spec.hs
+  other-modules:
+      Condicionales_guardas_y_patrones_Spec
+      Definiciones_por_composicion_Spec
+      Paths_I1M_Ejercicios_Haskell
+  hs-source-dirs:
+      test
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      I1M-Ejercicios-Haskell
+    , QuickCheck
+    , array
+    , base
+    , containers
+    , hspec
+    , hspec-core
+    , matrix
+    , primes
+    , random
+    , vector
+  default-language: Haskell2010

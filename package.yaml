@@ -1,0 +1,45 @@
+name: I1M-Ejercicios-Haskell
+version: '0.1.0.0'
+synopsis: Ejercicios de programación funcional con Haskell
+description: >
+  Relaciones de ejercicios de programación funcional con Haskell de la
+  asignatura I1M (Informática de 1º del Grado en Matemáticas de la
+  Universidad de Sevilla).
+category: Educational
+author: Jose A. Alonso
+maintainer: JoseA.Alonso@gmail.com
+copyright: Jose A. Alonso
+license: BSD3
+github: jaalonso/I1M-Ejercicios-Haskell
+extra-source-files:
+- README.org
+dependencies:
+  - array
+  - containers
+  - hspec
+  - hspec-core
+  - matrix
+  - primes
+  - QuickCheck
+  - random
+  - vector
+library:
+  source-dirs: src
+  ghc-options: -Wall -fno-warn-type-defaults
+  dependencies:
+  - base >=4.7 && <5
+  - gnuplot
+  - I1M
+tests:
+  spec:
+    main: Spec.hs
+    source-dirs: test
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - base
+    - hspec
+    - hspec-core
+    - I1M-Ejercicios-Haskell

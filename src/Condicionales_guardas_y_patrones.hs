@@ -14,7 +14,7 @@ module Condicionales_guardas_y_patrones where
 -- (no recursivas) de funciones que usan condicionales, guardas o
 -- patrones.
 --
--- Estos ejercicios se corresponden con el tema 4 que se encuentran en
+-- Estos ejercicios se corresponden con el tema 4 que se encuentra en
 --    https://jaalonso.github.io/cursos/i1m/temas/tema-4.html
 
 -- ---------------------------------------------------------------------

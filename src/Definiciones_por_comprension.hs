@@ -11,7 +11,7 @@ module Definiciones_por_comprension where
 -- ---------------------------------------------------------------------
 
 -- En esta relación se presentan ejercicios con definiciones por
--- comprensión correspondientes al tema 5 que se encuentra
+-- comprensión correspondientes al tema 5 que se encuentra en
 --    https://jaalonso.github.io/cursos/i1m/temas/tema-5.html
 
 -- ---------------------------------------------------------------------

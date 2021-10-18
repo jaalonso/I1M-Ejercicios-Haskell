@@ -29,6 +29,7 @@ library
       Condicionales_guardas_y_patrones
       Definiciones_por_composicion
       Definiciones_por_comprension
+      Definiciones_por_recursion
   other-modules:
       Paths_I1M_Ejercicios_Haskell
   hs-source-dirs:
@@ -56,6 +57,7 @@ test-suite spec
       Condicionales_guardas_y_patrones_Spec
       Definiciones_por_composicion_Spec
       Definiciones_por_comprension_Spec
+      Definiciones_por_recursion_Spec
       Paths_I1M_Ejercicios_Haskell
   hs-source-dirs:
       test

@@ -7,4 +7,4 @@ Sevilla) son las siguientes:
 4. [[./src/Definiciones_por_recursion.hs][Definiciones por recursión]].
 5. [[./src/Operaciones_conjuntistas_con_listas.hs][Operaciones conjuntistas con listas]].
 6. [[./src/El_algoritmo_de_Luhn.hs][El algoritmo de Luhn]].
-7- [[./src/Funciones_de_orden_superior_y_definiciones_por_plegados.hs][Funciones de orden superior y definiciones por plegados]].
+7. [[./src/Funciones_de_orden_superior_y_definiciones_por_plegados.hs][Funciones de orden superior y definiciones por plegados]].

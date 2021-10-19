@@ -31,6 +31,7 @@ library
       Definiciones_por_comprension
       Definiciones_por_recursion
       El_algoritmo_de_Luhn
+      Funciones_de_orden_superior_y_definiciones_por_plegados
       Operaciones_conjuntistas_con_listas
   other-modules:
       Paths_I1M_Ejercicios_Haskell
@@ -61,6 +62,7 @@ test-suite spec
       Definiciones_por_comprension_Spec
       Definiciones_por_recursion_Spec
       El_algoritmo_de_Luhn_Spec
+      Funciones_de_orden_superior_y_definiciones_por_plegados_Spec
       Operaciones_conjuntistas_con_listas_Spec
       Paths_I1M_Ejercicios_Haskell
   hs-source-dirs:

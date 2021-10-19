@@ -6,3 +6,4 @@ Sevilla) son las siguientes:
 3. [[./src/Definiciones_por_comprension.hs][Definiciones por comprensión]].
 4. [[./src/Definiciones_por_recursion.hs][Definiciones por recursión]].
 5. [[./src/Operaciones_conjuntistas_con_listas.hs][Operaciones conjuntistas con listas]].
+6. [[./src/El_algoritmo_de_Luhn.hs][El algoritmo de Luhn]].

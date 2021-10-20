@@ -34,6 +34,7 @@ library
       Funciones_de_orden_superior_y_definiciones_por_plegados
       Funciones_sobre_cadenas
       Operaciones_conjuntistas_con_listas
+      Tipos_de_datos_algebraicos_Arboles_binarios
   other-modules:
       Paths_I1M_Ejercicios_Haskell
   hs-source-dirs:
@@ -66,6 +67,7 @@ test-suite spec
       Funciones_de_orden_superior_y_definiciones_por_plegados_Spec
       Funciones_sobre_cadenas_Spec
       Operaciones_conjuntistas_con_listas_Spec
+      Tipos_de_datos_algebraicos_Arboles_binarios_Spec
       Paths_I1M_Ejercicios_Haskell
   hs-source-dirs:
       test

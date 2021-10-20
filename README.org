@@ -9,3 +9,4 @@ Sevilla) son las siguientes:
 6. [[./src/El_algoritmo_de_Luhn.hs][El algoritmo de Luhn]].
 7. [[./src/Funciones_de_orden_superior_y_definiciones_por_plegados.hs][Funciones de orden superior y definiciones por plegados]].
 8. [[./src/Funciones_sobre_cadenas.hs][Funciones sobre cadenas]].
+9. [[./src/Tipos_de_datos_algebraicos_Arboles_binarios.hs][Tipos de datos algebraicos: Árboles binarios]].

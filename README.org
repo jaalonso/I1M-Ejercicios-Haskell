@@ -13,3 +13,4 @@ Sevilla) son las siguientes:
 10. [[./src/Tipos_de_datos_algebraicos.hs][Tipos de datos algebraicos]].
 11. [[./src/Evaluacion_perezosa_y_listas_infinitas.hs][Evaluación perezosa y listas infinitas]].
 12. [[./src/Aplicaciones_de_la_PF_con_listas_infinitas.hs][Aplicaciones de la programación funcional con listas infinitas]].
+13. [[./src/El_juego_del_nim.hs][El juego del nim y las funciones de entrada/salida]].

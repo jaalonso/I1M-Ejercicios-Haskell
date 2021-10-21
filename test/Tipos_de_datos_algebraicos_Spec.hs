@@ -2,7 +2,6 @@ module Tipos_de_datos_algebraicos_Spec (main, spec) where
 
 import Tipos_de_datos_algebraicos
 import Test.Hspec
-import Test.QuickCheck
 
 main :: IO ()
 main = hspec spec

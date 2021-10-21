@@ -26,6 +26,7 @@ source-repository head
 
 library
   exposed-modules:
+      Aplicaciones_de_la_PF_con_listas_infinitas
       Condicionales_guardas_y_patrones
       Definiciones_por_composicion
       Definiciones_por_comprension
@@ -61,6 +62,7 @@ test-suite spec
   type: exitcode-stdio-1.0
   main-is: Spec.hs
   other-modules:
+      Aplicaciones_de_la_PF_con_listas_infinitas_Spec
       Condicionales_guardas_y_patrones_Spec
       Definiciones_por_composicion_Spec
       Definiciones_por_comprension_Spec

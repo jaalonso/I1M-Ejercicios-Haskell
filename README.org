@@ -12,3 +12,4 @@ Sevilla) son las siguientes:
 9. [[./src/Tipos_de_datos_algebraicos_Arboles_binarios.hs][Tipos de datos algebraicos: Árboles binarios]].
 10. [[./src/Tipos_de_datos_algebraicos.hs][Tipos de datos algebraicos]].
 11. [[./src/Evaluacion_perezosa_y_listas_infinitas.hs][Evaluación perezosa y listas infinitas]].
+12. [[./src/Aplicaciones_de_la_PF_con_listas_infinitas.hs][Aplicaciones de la programación funcional con listas infinitas]].

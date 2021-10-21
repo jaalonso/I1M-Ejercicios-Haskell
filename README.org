@@ -10,3 +10,4 @@ Sevilla) son las siguientes:
 7. [[./src/Funciones_de_orden_superior_y_definiciones_por_plegados.hs][Funciones de orden superior y definiciones por plegados]].
 8. [[./src/Funciones_sobre_cadenas.hs][Funciones sobre cadenas]].
 9. [[./src/Tipos_de_datos_algebraicos_Arboles_binarios.hs][Tipos de datos algebraicos: Árboles binarios]].
+10. [[./src/Tipos_de_datos_algebraicos.hs][Tipos de datos algebraicos]].

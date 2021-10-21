@@ -67,8 +67,9 @@ spec = do
       producto [1::Int,3] [2::Int,4] `shouldBe` [(1,2),(1,4),(3,2),(3,4)]
     it "e2" $
       productoR [1::Int,3] [2::Int,4] `shouldBe` [(1,2),(1,4),(3,2),(3,4)]
-    it "e3" $
-      property prop_producto
+    modifyMaxSize (const 7) $
+      it "p1" $
+        property prop_producto
 
   describe "prop_elementos_producto" $
     it "p1" $

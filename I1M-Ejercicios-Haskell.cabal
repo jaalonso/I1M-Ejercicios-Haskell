@@ -31,6 +31,7 @@ library
       Definiciones_por_comprension
       Definiciones_por_recursion
       El_algoritmo_de_Luhn
+      Evaluacion_perezosa_y_listas_infinitas
       Funciones_de_orden_superior_y_definiciones_por_plegados
       Funciones_sobre_cadenas
       Operaciones_conjuntistas_con_listas
@@ -65,6 +66,7 @@ test-suite spec
       Definiciones_por_comprension_Spec
       Definiciones_por_recursion_Spec
       El_algoritmo_de_Luhn_Spec
+      Evaluacion_perezosa_y_listas_infinitas_Spec
       Funciones_de_orden_superior_y_definiciones_por_plegados_Spec
       Funciones_sobre_cadenas_Spec
       Operaciones_conjuntistas_con_listas_Spec

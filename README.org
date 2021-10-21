@@ -11,3 +11,4 @@ Sevilla) son las siguientes:
 8. [[./src/Funciones_sobre_cadenas.hs][Funciones sobre cadenas]].
 9. [[./src/Tipos_de_datos_algebraicos_Arboles_binarios.hs][Tipos de datos algebraicos: Árboles binarios]].
 10. [[./src/Tipos_de_datos_algebraicos.hs][Tipos de datos algebraicos]].
+11. [[./src/Evaluacion_perezosa_y_listas_infinitas.hs][Evaluación perezosa y listas infinitas]].

@@ -48,7 +48,7 @@ spec = do
 
   describe "espejo" $ do
     it "e1" $
-      show (espejo (N 9 (N 3 (H 2) (H 4)) (H 7))) `shouldBe` "N 9 (H 7) (N 3 (H 4) (H 2))"
+      espejo (N 9 (N 3 (H 2) (H 4)) (H 7)) `shouldBe` N 9 (H 7) (N 3 (H 4) (H 2))
     it "p1" $
       property prop_espejo
     it "p2" $
@@ -58,39 +58,39 @@ spec = do
 
   describe "takeArbol" $ do
     it "e1" $
-      show (takeArbol 0 (N 9 (N 3 (H 2) (H 4)) (H 7))) `shouldBe` "H 9"
+      takeArbol 0 (N 9 (N 3 (H 2) (H 4)) (H 7)) `shouldBe` H 9
     it "e2" $
-      show (takeArbol 1 (N 9 (N 3 (H 2) (H 4)) (H 7))) `shouldBe` "N 9 (H 3) (H 7)"
+      takeArbol 1 (N 9 (N 3 (H 2) (H 4)) (H 7)) `shouldBe` N 9 (H 3) (H 7)
     it "e3" $
-      show (takeArbol 2 (N 9 (N 3 (H 2) (H 4)) (H 7))) `shouldBe` "N 9 (N 3 (H 2) (H 4)) (H 7)"
+      takeArbol 2 (N 9 (N 3 (H 2) (H 4)) (H 7)) `shouldBe` N 9 (N 3 (H 2) (H 4)) (H 7)
     it "e4" $
-      show (takeArbol 3 (N 9 (N 3 (H 2) (H 4)) (H 7))) `shouldBe` "N 9 (N 3 (H 2) (H 4)) (H 7)"
+      takeArbol 3 (N 9 (N 3 (H 2) (H 4)) (H 7)) `shouldBe` N 9 (N 3 (H 2) (H 4)) (H 7)
     it "p1" $
       property prop_takeArbol
 
   describe "repeatArbol" $ do
     it "e1" $
-      show (takeArbol 0 (repeatArbol 3)) `shouldBe` "H 3"
+      takeArbol 0 (repeatArbol 3) `shouldBe` H 3
     it "e2" $
-      show (takeArbol 1 (repeatArbol 3)) `shouldBe` "N 3 (H 3) (H 3)"
+      takeArbol 1 (repeatArbol 3) `shouldBe` N 3 (H 3) (H 3)
     it "e3" $
-      show (takeArbol 2 (repeatArbol 3)) `shouldBe` "N 3 (N 3 (H 3) (H 3)) (N 3 (H 3) (H 3))"
+      takeArbol 2 (repeatArbol 3) `shouldBe` N 3 (N 3 (H 3) (H 3)) (N 3 (H 3) (H 3))
 
   describe "replicateArbol" $ do
     it "e1" $
-      show (replicateArbol 0 5) `shouldBe` "H 5"
+      replicateArbol 0 5 `shouldBe` H 5
     it "e2" $
-      show (replicateArbol 1 5) `shouldBe` "N 5 (H 5) (H 5)"
+      replicateArbol 1 5 `shouldBe` N 5 (H 5) (H 5)
     it "e3" $
-      show (replicateArbol 2 5) `shouldBe` "N 5 (N 5 (H 5) (H 5)) (N 5 (H 5) (H 5))"
+      replicateArbol 2 5 `shouldBe` N 5 (N 5 (H 5) (H 5)) (N 5 (H 5) (H 5))
     modifyMaxSize (const 7) $
       it "p1" $
       property prop_replicateArbol
 
   describe "" $ do
     it "e1" $
-      show (mapArbol (*2) (N 9 (N 3 (H 2) (H 4)) (H 7))) `shouldBe`
-        "N 18 (N 6 (H 4) (H 8)) (H 14)"
+      mapArbol (*2) (N 9 (N 3 (H 2) (H 4)) (H 7)) `shouldBe`
+        N 18 (N 6 (H 4) (H 8)) (H 14)
     it "p1" $
       property prop_mapArbol_espejo
     it "p2" $

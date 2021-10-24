@@ -36,6 +36,7 @@ library
       Evaluacion_perezosa_y_listas_infinitas
       Funciones_de_orden_superior_y_definiciones_por_plegados
       Funciones_sobre_cadenas
+      Metodo_de_Gauss_para_triangularizar_matrices
       Operaciones_conjuntistas_con_listas
       Tipos_de_datos_algebraicos
       Tipos_de_datos_algebraicos_Arboles_binarios
@@ -74,6 +75,7 @@ test-suite spec
       Evaluacion_perezosa_y_listas_infinitas_Spec
       Funciones_de_orden_superior_y_definiciones_por_plegados_Spec
       Funciones_sobre_cadenas_Spec
+      Metodo_de_Gauss_para_triangularizar_matrices_Spec
       Operaciones_conjuntistas_con_listas_Spec
       Tipos_de_datos_algebraicos_Arboles_binarios_Spec
       Tipos_de_datos_algebraicos_Spec

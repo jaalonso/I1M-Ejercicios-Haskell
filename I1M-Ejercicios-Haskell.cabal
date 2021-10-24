@@ -41,6 +41,7 @@ library
       Tipos_de_datos_algebraicos
       Tipos_de_datos_algebraicos_Arboles_binarios
       Vectores_y_matrices
+      Vectores_y_matrices_con_las_librerias
   other-modules:
       Paths_I1M_Ejercicios_Haskell
   hs-source-dirs:
@@ -79,6 +80,7 @@ test-suite spec
       Operaciones_conjuntistas_con_listas_Spec
       Tipos_de_datos_algebraicos_Arboles_binarios_Spec
       Tipos_de_datos_algebraicos_Spec
+      Vectores_y_matrices_con_las_librerias_Spec
       Vectores_y_matrices_Spec
       Paths_I1M_Ejercicios_Haskell
   hs-source-dirs:

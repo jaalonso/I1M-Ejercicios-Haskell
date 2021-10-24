@@ -16,3 +16,4 @@ Sevilla) son las siguientes:
 13. [[./src/El_juego_del_nim.hs][El juego del nim y las funciones de entrada/salida]].
 14. [[./src/Vectores_y_matrices.hs][Vectores y matrices]].
 15. [[./src/Metodo_de_Gauss_para_triangularizar_matrices.hs][Método de Gauss para triangularizar matrices]].
+16. [[./src/Vectores_y_matrices_con_las_librerias.hs][Vectores y matrices con las librerías]].

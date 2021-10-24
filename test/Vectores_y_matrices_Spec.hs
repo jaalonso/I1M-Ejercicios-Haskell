@@ -1,8 +1,8 @@
 module Vectores_y_matrices_Spec (main, spec) where
 
 import Vectores_y_matrices
-import Test.Hspec
 import Data.Array
+import Test.Hspec
 
 main :: IO ()
 main = hspec spec

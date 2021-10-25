@@ -27,6 +27,7 @@ source-repository head
 library
   exposed-modules:
       Aplicaciones_de_la_PF_con_listas_infinitas
+      Calculo_numerico_2_Limites_biseccion_e_integrales
       Calculo_numerico_Diferenciacion_y_metodos_de_Heron_y_de_Newton
       Condicionales_guardas_y_patrones
       Definiciones_por_composicion
@@ -68,6 +69,7 @@ test-suite spec
   main-is: Spec.hs
   other-modules:
       Aplicaciones_de_la_PF_con_listas_infinitas_Spec
+      Calculo_numerico_2_Limites_biseccion_e_integrales_Spec
       Calculo_numerico_Diferenciacion_y_metodos_de_Heron_y_de_Newton_Spec
       Condicionales_guardas_y_patrones_Spec
       Definiciones_por_composicion_Spec

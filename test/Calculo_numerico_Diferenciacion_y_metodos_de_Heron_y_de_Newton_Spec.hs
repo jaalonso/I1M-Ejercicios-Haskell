@@ -3,6 +3,7 @@ module Calculo_numerico_Diferenciacion_y_metodos_de_Heron_y_de_Newton_Spec (main
 import Calculo_numerico_Diferenciacion_y_metodos_de_Heron_y_de_Newton
 import Test.Hspec
 import Test.QuickCheck
+
 main :: IO ()
 main = hspec spec
 

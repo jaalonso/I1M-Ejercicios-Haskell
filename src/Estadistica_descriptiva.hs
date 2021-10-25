@@ -290,7 +290,7 @@ regresionLineal xs ys = (a,b)
 -- tal que (grafica xs ys) pinte los puntos correspondientes a las
 -- listas de valores xs e ys y su recta de regresión. Por ejemplo,
 -- con (grafica ejX ejY) se obtiene el dibujo de la Figura 1
--- que se encuentra en
+-- que se encuentra en https://bit.ly/3CcMYX1
 -- ---------------------------------------------------------------------
 
 grafica :: [Double] -> [Double] -> IO ()

@@ -21,3 +21,4 @@ Sevilla) son las siguientes:
 18. [[./src/Calculo_numerico_2_Limites_biseccion_e_integrales.hs][Cálculo numérico (2): límites, bisección e integrales]].
 19. [[./src/Estadistica_descriptiva.hs][Estadística descriptiva]].
 20. [[./src/Combinatoria.hs][Combinatoria]].
+21. [[./src/Calculo_del_numero_pi_mediante_el_metodo_de_Montecarlo.hs][Cálculo del número pi mediante el método de Montecarlo]].

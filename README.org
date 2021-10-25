@@ -17,3 +17,4 @@ Sevilla) son las siguientes:
 14. [[./src/Vectores_y_matrices.hs][Vectores y matrices]].
 15. [[./src/Metodo_de_Gauss_para_triangularizar_matrices.hs][Método de Gauss para triangularizar matrices]].
 16. [[./src/Vectores_y_matrices_con_las_librerias.hs][Vectores y matrices con las librerías]].
+17. [[./src/Calculo_numerico_Diferenciacion_y_metodos_de_Heron_y_de_Newton.hs][Cálculo numérico: Diferenciación y métodos de Herón y de Newton]].

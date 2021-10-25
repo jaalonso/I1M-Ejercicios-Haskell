@@ -72,7 +72,6 @@ test-suite spec
   main-is: Spec.hs
   other-modules:
       Aplicaciones_de_la_PF_con_listas_infinitas_Spec
-      Calculo_del_numero_pi_mediante_el_metodo_de_Montecarlo_Spec
       Calculo_numerico_2_Limites_biseccion_e_integrales_Spec
       Calculo_numerico_Diferenciacion_y_metodos_de_Heron_y_de_Newton_Spec
       Combinatoria_Spec

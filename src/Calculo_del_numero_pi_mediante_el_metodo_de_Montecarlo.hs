@@ -85,7 +85,8 @@ calculoDePi n = do
 --    graficaPi :: [Int] -> IO ()
 -- tal que (graficaPi xs) dibuja la grafica del valor de pi usando el
 -- número de putos indicados por los elementos de xs. Por ejemplo,
--- (graficaPi [0,10..4000]) dibuja la Figura 1.
+-- (graficaPi [0,10..4000]) dibuja la Figura 1 (ver
+-- https://bit.ly/3pzAO6N  ).
 -- -----------------------------------------------------------------------
 
 graficaPi :: [Int] -> IO ()

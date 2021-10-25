@@ -19,3 +19,4 @@ Sevilla) son las siguientes:
 16. [[./src/Vectores_y_matrices_con_las_librerias.hs][Vectores y matrices con las librerías]].
 17. [[./src/Calculo_numerico_Diferenciacion_y_metodos_de_Heron_y_de_Newton.hs][Cálculo numérico: Diferenciación y métodos de Herón y de Newton]].
 18. [[./src/Calculo_numerico_2_Limites_biseccion_e_integrales.hs][Cálculo numérico (2): límites, bisección e integrales]].
+19. [[./src/Estadistica_descriptiva.hs][Estadística descriptiva]].

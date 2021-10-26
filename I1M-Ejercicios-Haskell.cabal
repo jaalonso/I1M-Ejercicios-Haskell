@@ -35,6 +35,7 @@ library
       Definiciones_por_composicion
       Definiciones_por_comprension
       Definiciones_por_recursion
+      Ecuacion_con_factoriales
       El_algoritmo_de_Luhn
       El_juego_del_nim
       Estadistica_descriptiva
@@ -79,6 +80,7 @@ test-suite spec
       Definiciones_por_composicion_Spec
       Definiciones_por_comprension_Spec
       Definiciones_por_recursion_Spec
+      Ecuacion_con_factoriales_Spec
       El_algoritmo_de_Luhn_Spec
       El_juego_del_nim_Spec
       Estadistica_descriptiva_Spec

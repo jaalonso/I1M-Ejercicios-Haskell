@@ -22,3 +22,4 @@ Sevilla) son las siguientes:
 19. [[./src/Estadistica_descriptiva.hs][Estadística descriptiva]].
 20. [[./src/Combinatoria.hs][Combinatoria]].
 21. [[./src/Calculo_del_numero_pi_mediante_el_metodo_de_Montecarlo.hs][Cálculo del número pi mediante el método de Montecarlo]].
+22. [[./src/Ecuacion_con_factoriales.hs][Ecuación con factoriales]].

@@ -24,3 +24,4 @@ Sevilla) son las siguientes:
 21. [[./src/Calculo_del_numero_pi_mediante_el_metodo_de_Montecarlo.hs][Cálculo del número pi mediante el método de Montecarlo]].
 22. [[./src/Ecuacion_con_factoriales.hs][Ecuación con factoriales]].
 23. [[./src/Algoritmos_de_ordenacion_y_complejidad.hs][Algoritmos de ordenación y complejidad]].
+24. [[./src/El_TAD_de_las_pilas.hs][El tipo abstracto de dato de las pilas]].

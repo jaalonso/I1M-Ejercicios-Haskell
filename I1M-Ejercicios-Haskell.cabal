@@ -39,6 +39,7 @@ library
       Ecuacion_con_factoriales
       El_algoritmo_de_Luhn
       El_juego_del_nim
+      El_TAD_de_las_colas
       El_TAD_de_las_pilas
       Estadistica_descriptiva
       Evaluacion_perezosa_y_listas_infinitas
@@ -86,6 +87,7 @@ test-suite spec
       Ecuacion_con_factoriales_Spec
       El_algoritmo_de_Luhn_Spec
       El_juego_del_nim_Spec
+      El_TAD_de_las_colas_Spec
       El_TAD_de_las_pilas_Spec
       Estadistica_descriptiva_Spec
       Evaluacion_perezosa_y_listas_infinitas_Spec

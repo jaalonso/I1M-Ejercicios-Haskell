@@ -195,9 +195,9 @@ subconjunto = subconjunto3
 --    subconjuntoPropio :: Ord a => Conj a -> Conj a -> Bool
 -- tal (subconjuntoPropio c1 c2) se verifica si c1 es un subconjunto
 -- propio de c2. Por ejemplo,
---   subconjuntoPropio (Cj [2..5]) (Cj [1..7]) == True
---   subconjuntoPropio (Cj [2..5]) (Cj [1..4]) == False
---   subconjuntoPropio (Cj [2..5]) (Cj [2..5]) == False
+--    subconjuntoPropio (Cj [2..5]) (Cj [1..7]) == True
+--    subconjuntoPropio (Cj [2..5]) (Cj [1..4]) == False
+--    subconjuntoPropio (Cj [2..5]) (Cj [2..5]) == False
 -- ---------------------------------------------------------------------
 
 subconjuntoPropio :: Ord a => Conj a -> Conj a -> Bool
@@ -208,7 +208,7 @@ subconjuntoPropio c1 c2 =
 -- Ejercicio 3. Definir la función
 --    unitario :: Ord a => a -> Conj a
 -- tal que (unitario x) es el conjunto {x}. Por ejemplo,
---   unitario 5 == {5}
+--    unitario 5 == {5}
 -- ---------------------------------------------------------------------
 
 unitario :: Ord a => a -> Conj a
@@ -337,8 +337,8 @@ interseccionG2 = foldr1 interseccion
 --    disjuntos :: Ord a => Conj a -> Conj a -> Bool
 -- tal que (disjuntos c1 c2) se verifica si los conjuntos c1 y c2 son
 -- disjuntos. Por ejemplo,
---   disjuntos (Cj [2..5]) (Cj [6..9]) == True
---   disjuntos (Cj [2..5]) (Cj [1..9]) == False
+--    disjuntos (Cj [2..5]) (Cj [6..9]) == True
+--    disjuntos (Cj [2..5]) (Cj [1..9]) == False
 -- ---------------------------------------------------------------------
 
 disjuntos :: Ord a => Conj a -> Conj a -> Bool
@@ -362,8 +362,8 @@ diferencia (Cj xs) (Cj ys) = Cj zs
 --    diferenciaSimetrica :: Ord a => Conj a -> Conj a -> Conj a
 -- tal que (diferenciaSimetrica c1 c2) es la diferencia simétrica de los
 -- conjuntos c1 y c2. Por ejemplo,
---   diferenciaSimetrica ejConj1 ejConj2 == {0,3,5,6,7,8}
---   diferenciaSimetrica ejConj2 ejConj1 == {0,3,5,6,7,8}
+--    diferenciaSimetrica ejConj1 ejConj2 == {0,3,5,6,7,8}
+--    diferenciaSimetrica ejConj2 ejConj1 == {0,3,5,6,7,8}
 -- ---------------------------------------------------------------------
 
 diferenciaSimetrica :: Ord a => Conj a -> Conj a -> Conj a
@@ -411,7 +411,7 @@ divide x = particion (<= x)
 --    mapC :: (a -> b) -> Conj a -> Conj b
 -- tal que (map f c) es el conjunto formado por las imágenes de los
 -- elementos de c, mediante f. Por ejemplo,
---   mapC (*2) (Cj [1..4]) == {2,4,6,8}
+--    mapC (*2) (Cj [1..4]) == {2,4,6,8}
 -- ---------------------------------------------------------------------
 
 mapC :: (a -> b) -> Conj a -> Conj b
@@ -422,8 +422,8 @@ mapC f (Cj xs) = Cj (map f xs)
 --    everyC :: (a -> Bool) -> Conj a -> Bool
 -- tal que (everyC p c) se verifica si todos los elemsntos de c
 -- verifican el predicado p.  Por ejmplo,
---   everyC even (Cj [2,4..10]) == True
---   everyC even (Cj [2..10])   == False
+--    everyC even (Cj [2,4..10]) == True
+--    everyC even (Cj [2..10])   == False
 -- ---------------------------------------------------------------------
 
 everyC :: (a -> Bool) -> Conj a -> Bool
@@ -434,8 +434,8 @@ everyC p (Cj xs) = all p xs
 --    someC :: (a -> Bool) -> Conj a -> Bool
 -- tal que (someC p c) se verifica si algún elemento de c verifica el
 -- predicado p. Por ejemplo,
---   someC even (Cj [1,4,7]) == True
---   someC even (Cj [1,3,7]) == False
+--    someC even (Cj [1,4,7]) == True
+--    someC even (Cj [1,3,7]) == False
 -- ---------------------------------------------------------------------
 
 someC :: (a -> Bool) -> Conj a -> Bool
@@ -446,7 +446,7 @@ someC p (Cj xs) = any p xs
 --    productoC :: (Ord a, Ord b) => Conj a -> Conj b -> Conj (a,b)
 -- tal que (productoC c1 c2) es el producto cartesiano de los
 -- conjuntos c1 y c2. Por ejemplo,
---   productoC (Cj [1,3]) (Cj [2,4])== {(1,2),(1,4),(3,2),(3,4)}
+--    productoC (Cj [1,3]) (Cj [2,4])== {(1,2),(1,4),(3,2),(3,4)}
 -- ---------------------------------------------------------------------
 
 productoC :: (Ord a, Ord b) => Conj a -> Conj b -> Conj (a,b)

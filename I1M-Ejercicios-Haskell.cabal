@@ -47,6 +47,7 @@ library
       Funciones_sobre_cadenas
       Metodo_de_Gauss_para_triangularizar_matrices
       Operaciones_con_conjuntos
+      Operaciones_con_conjuntos_usando_la_libreria
       Operaciones_conjuntistas_con_listas
       Tipos_de_datos_algebraicos
       Tipos_de_datos_algebraicos_Arboles_binarios
@@ -96,6 +97,7 @@ test-suite spec
       Funciones_sobre_cadenas_Spec
       Metodo_de_Gauss_para_triangularizar_matrices_Spec
       Operaciones_con_conjuntos_Spec
+      Operaciones_con_conjuntos_usando_la_libreria_Spec
       Operaciones_conjuntistas_con_listas_Spec
       Tipos_de_datos_algebraicos_Arboles_binarios_Spec
       Tipos_de_datos_algebraicos_Spec

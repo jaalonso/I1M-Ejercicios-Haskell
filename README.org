@@ -27,3 +27,4 @@ Sevilla) son las siguientes:
 24. [[./src/El_TAD_de_las_pilas.hs][El tipo abstracto de dato de las pilas]].
 25. [[./src/El_TAD_de_las_colas.hs][El tipo abstracto de datos de las colas]].
 26. [[./src/Operaciones_con_conjuntos.hs][Operaciones con conjuntos]].
+27. [[./src/Operaciones_con_conjuntos_usando_la_libreria.hs][Operaciones con conjuntos usando la librería Data.Set]].

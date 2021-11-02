@@ -49,6 +49,7 @@ library
       Operaciones_con_conjuntos
       Operaciones_con_conjuntos_usando_la_libreria
       Operaciones_conjuntistas_con_listas
+      Relaciones_binarias_homogeneas
       Tipos_de_datos_algebraicos
       Tipos_de_datos_algebraicos_Arboles_binarios
       Vectores_y_matrices
@@ -99,6 +100,7 @@ test-suite spec
       Operaciones_con_conjuntos_Spec
       Operaciones_con_conjuntos_usando_la_libreria_Spec
       Operaciones_conjuntistas_con_listas_Spec
+      Relaciones_binarias_homogeneas_Spec
       Tipos_de_datos_algebraicos_Arboles_binarios_Spec
       Tipos_de_datos_algebraicos_Spec
       Vectores_y_matrices_con_las_librerias_Spec

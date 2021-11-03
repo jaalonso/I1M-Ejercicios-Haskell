@@ -29,3 +29,4 @@ Sevilla) son las siguientes:
 26. [[./src/Operaciones_con_conjuntos.hs][Operaciones con conjuntos]].
 27. [[./src/Operaciones_con_conjuntos_usando_la_libreria.hs][Operaciones con conjuntos usando la librería Data.Set]].
 28. [[./src/Relaciones_binarias_homogeneas.hs][Relaciones binarias homogéneas]].
+29. [[./src/Relaciones_binarias_homogeneas_con_la_libreria.hs][Relaciones binarias homogéneas con la librería Data.Set]].

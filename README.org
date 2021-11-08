@@ -31,3 +31,4 @@ Sevilla) son las siguientes:
 28. [[./src/Relaciones_binarias_homogeneas.hs][Relaciones binarias homogéneas]].
 29. [[./src/Relaciones_binarias_homogeneas_con_la_libreria.hs][Relaciones binarias homogéneas con la librería Data.Set]].
 30. [[./src/El_TAD_de_los_monticulos.hs][El tipo abstracto de datos de los montículos]].
+31. [[./src/El_TAD_de_polinomios_operaciones.hs][Operaciones con el tipo abstracto de datos de los polinomios]].

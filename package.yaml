@@ -42,4 +42,5 @@ tests:
     - base
     - hspec
     - hspec-core
+    - I1M
     - I1M-Ejercicios-Haskell

@@ -42,6 +42,7 @@ library
       El_TAD_de_las_colas
       El_TAD_de_las_pilas
       El_TAD_de_los_monticulos
+      El_TAD_de_polinomios_operaciones
       Estadistica_descriptiva
       Evaluacion_perezosa_y_listas_infinitas
       Funciones_de_orden_superior_y_definiciones_por_plegados
@@ -95,6 +96,7 @@ test-suite spec
       El_TAD_de_las_colas_Spec
       El_TAD_de_las_pilas_Spec
       El_TAD_de_los_monticulos_Spec
+      El_TAD_de_polinomios_operaciones_Spec
       Estadistica_descriptiva_Spec
       Evaluacion_perezosa_y_listas_infinitas_Spec
       Funciones_de_orden_superior_y_definiciones_por_plegados_Spec
@@ -114,7 +116,8 @@ test-suite spec
       test
   ghc-options: -threaded -rtsopts -with-rtsopts=-N
   build-depends:
-      I1M-Ejercicios-Haskell
+      I1M
+    , I1M-Ejercicios-Haskell
     , QuickCheck
     , array
     , base

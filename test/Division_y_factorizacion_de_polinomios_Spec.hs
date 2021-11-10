@@ -1,7 +1,6 @@
 module Division_y_factorizacion_de_polinomios_Spec (main, spec) where
 
 import Division_y_factorizacion_de_polinomios
--- import I1M.PolOperaciones
 import Test.QuickCheck
 import Test.Hspec
 

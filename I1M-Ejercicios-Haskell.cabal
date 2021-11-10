@@ -52,6 +52,7 @@ library
       Operaciones_con_conjuntos
       Operaciones_con_conjuntos_usando_la_libreria
       Operaciones_conjuntistas_con_listas
+      Programación_dinamica_Caminos_en_una_reticula
       Relaciones_binarias_homogeneas
       Relaciones_binarias_homogeneas_con_la_libreria
       Tipos_de_datos_algebraicos
@@ -107,6 +108,7 @@ test-suite spec
       Operaciones_con_conjuntos_Spec
       Operaciones_con_conjuntos_usando_la_libreria_Spec
       Operaciones_conjuntistas_con_listas_Spec
+      Programación_dinamica_Caminos_en_una_reticula_Spec
       Relaciones_binarias_homogeneas_con_la_libreria_Spec
       Relaciones_binarias_homogeneas_Spec
       Tipos_de_datos_algebraicos_Arboles_binarios_Spec

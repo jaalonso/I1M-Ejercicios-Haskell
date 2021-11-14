@@ -35,3 +35,4 @@ Sevilla) son las siguientes:
 32. [[./src/Division_y_factorizacion_de_polinomios.hs][División y factorización de polinomios mediante la regla de Ruffini]].
 33. [[./src/Programación_dinamica_Caminos_en_una_reticula.hs][Programación dinámica: Caminos en una retícula]].
 34. [[./src/Programacion_dinamica_Turista_en_Manhattan.hs][Programación dinámica: Turista en Manhattan]].
+35. [[./src/Programacion_dinamica_Apilamiento_de_barriles.hs][Programación dinámica: Apilamiento de barriles]].

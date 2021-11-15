@@ -58,6 +58,7 @@ library
       Programación_dinamica_Caminos_en_una_reticula
       Relaciones_binarias_homogeneas
       Relaciones_binarias_homogeneas_con_la_libreria
+      Resolucion_de_problemas_mediante_busqueda_en_espacios_de_estados
       Tipos_de_datos_algebraicos
       Tipos_de_datos_algebraicos_Arboles_binarios
       Vectores_y_matrices
@@ -117,6 +118,7 @@ test-suite spec
       Programación_dinamica_Caminos_en_una_reticula_Spec
       Relaciones_binarias_homogeneas_con_la_libreria_Spec
       Relaciones_binarias_homogeneas_Spec
+      Resolucion_de_problemas_mediante_busqueda_en_espacios_de_estados_Spec
       Tipos_de_datos_algebraicos_Arboles_binarios_Spec
       Tipos_de_datos_algebraicos_Spec
       Vectores_y_matrices_con_las_librerias_Spec

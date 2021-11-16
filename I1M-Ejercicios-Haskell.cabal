@@ -49,6 +49,7 @@ library
       Evaluacion_perezosa_y_listas_infinitas
       Funciones_de_orden_superior_y_definiciones_por_plegados
       Funciones_sobre_cadenas
+      Implementacion_del_TAD_de_los_grafos_mediante_listas
       Metodo_de_Gauss_para_triangularizar_matrices
       Operaciones_con_conjuntos
       Operaciones_con_conjuntos_usando_la_libreria
@@ -109,6 +110,7 @@ test-suite spec
       Evaluacion_perezosa_y_listas_infinitas_Spec
       Funciones_de_orden_superior_y_definiciones_por_plegados_Spec
       Funciones_sobre_cadenas_Spec
+      Implementacion_del_TAD_de_los_grafos_mediante_listas_Spec
       Metodo_de_Gauss_para_triangularizar_matrices_Spec
       Operaciones_con_conjuntos_Spec
       Operaciones_con_conjuntos_usando_la_libreria_Spec

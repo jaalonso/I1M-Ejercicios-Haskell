@@ -40,3 +40,4 @@ Sevilla) son las siguientes:
 37. [[./src/Resolucion_de_problemas_mediante_busqueda_en_espacios_de_estados.hs][Resolución de problemas mediante búsqueda en espacios de estados]].
 38. [[./src/Implementacion_del_TAD_de_los_grafos_mediante_listas.hs][Implementación del TAD de los grafos mediante listas]].
 39. [[./src/Implementacion_del_TAD_de_los_grafos_mediante_diccionarios.hs][Implementación del TAD de los grafos mediante diccionarios]].
+40. [[./src/Problemas_basicos_de_grafos.hs][Problemas básicos con el TAD de los grafos]].

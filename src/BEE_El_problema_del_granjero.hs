@@ -24,7 +24,6 @@ module BEE_El_problema_del_granjero where
 -- implementaciones estudiadas en el tema 23
 --    https://jaalonso.github.io/cursos/i1m/temas/tema-23.html
 --
---
 -- Para realizar los ejercicios hay que tener instalada la librería de
 -- I1M. Para instalarla basta ejecutar en una consola
 --    cabal update

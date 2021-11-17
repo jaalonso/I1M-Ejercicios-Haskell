@@ -55,6 +55,7 @@ library
       Operaciones_con_conjuntos
       Operaciones_con_conjuntos_usando_la_libreria
       Operaciones_conjuntistas_con_listas
+      Problemas_basicos_de_grafos
       Programacion_dinamica_Apilamiento_de_barriles
       Programacion_dinamica_Turista_en_Manhattan
       Programación_dinamica_Caminos_en_una_reticula
@@ -117,6 +118,7 @@ test-suite spec
       Operaciones_con_conjuntos_Spec
       Operaciones_con_conjuntos_usando_la_libreria_Spec
       Operaciones_conjuntistas_con_listas_Spec
+      Problemas_basicos_de_grafos_Spec
       Programacion_dinamica_Apilamiento_de_barriles_Spec
       Programacion_dinamica_Turista_en_Manhattan_Spec
       Programación_dinamica_Caminos_en_una_reticula_Spec

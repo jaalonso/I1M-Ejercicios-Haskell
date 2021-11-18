@@ -22,6 +22,8 @@ dependencies:
   - primes
   - QuickCheck
   - random
+  - statistics
+  - statistics-linreg
   - vector
 library:
   source-dirs: src

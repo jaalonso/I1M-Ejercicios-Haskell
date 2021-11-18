@@ -46,6 +46,7 @@ library
       El_TAD_de_los_monticulos
       El_TAD_de_polinomios_operaciones
       Estadistica_descriptiva
+      Estadistica_descriptiva_con_librerias
       Evaluacion_perezosa_y_listas_infinitas
       Funciones_de_orden_superior_y_definiciones_por_plegados
       Funciones_sobre_cadenas
@@ -83,6 +84,8 @@ library
     , matrix
     , primes
     , random
+    , statistics
+    , statistics-linreg
     , vector
   default-language: Haskell2010
 
@@ -108,6 +111,7 @@ test-suite spec
       El_TAD_de_las_pilas_Spec
       El_TAD_de_los_monticulos_Spec
       El_TAD_de_polinomios_operaciones_Spec
+      Estadistica_descriptiva_con_librerias_Spec
       Estadistica_descriptiva_Spec
       Evaluacion_perezosa_y_listas_infinitas_Spec
       Funciones_de_orden_superior_y_definiciones_por_plegados_Spec
@@ -145,5 +149,7 @@ test-suite spec
     , matrix
     , primes
     , random
+    , statistics
+    , statistics-linreg
     , vector
   default-language: Haskell2010

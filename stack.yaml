@@ -43,6 +43,7 @@ packages:
 # (e.g., acme-missiles-0.3)
 extra-deps:
 - I1M-0.1.0
+- statistics-linreg-0.3@sha256:95c6efe6c7f6b26bc6e9ada90ab2d18216371cf59a6ef2b517b4a6fd35d9a76f,2544
 
 # Override default flag values for local packages and extra-deps
 flags: {}

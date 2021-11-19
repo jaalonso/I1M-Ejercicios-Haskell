@@ -22,6 +22,7 @@ Sevilla) son las siguientes:
 + [[./src/Estadistica_descriptiva.hs][Estadística descriptiva]].
 + [[./src/Estadistica_descriptiva_con_librerias.hs][Estadística descriptiva con librerías]].
 + [[./src/Combinatoria.hs][Combinatoria]].
++ [[./src/Combinatoria_con_librerias.hs][Combinatoria con librerías]].
 + [[./src/Calculo_del_numero_pi_mediante_el_metodo_de_Montecarlo.hs][Cálculo del número pi mediante el método de Montecarlo]].
 + [[./src/Ecuacion_con_factoriales.hs][Ecuación con factoriales]].
 + [[./src/Algoritmos_de_ordenacion_y_complejidad.hs][Algoritmos de ordenación y complejidad]].

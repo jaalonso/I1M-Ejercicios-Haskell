@@ -12,6 +12,20 @@ packages:
   original:
     hackage: I1M-0.1.0
 - completed:
+    hackage: combinat-0.2.10.0@sha256:adc1dbb532b048e419374e9e89dc4f92c47758300ffe8534a54849266706e53b,5318
+    pantry-tree:
+      size: 4964
+      sha256: 3633e40972d9b3bc12ae75fdeadff558d5bf8293f592245db8bfdbff8c9e22be
+  original:
+    hackage: combinat-0.2.10.0@sha256:adc1dbb532b048e419374e9e89dc4f92c47758300ffe8534a54849266706e53b,5318
+- completed:
+    hackage: compact-word-vectors-0.2.0.2@sha256:e46c7c3186dafe1ae22434556ddec91af022f2360c57c30a46397758938f3acc,2617
+    pantry-tree:
+      size: 744
+      sha256: 04bb169017c6d066518c6b90938839cf0f1b3352188a4800ffe7b04d79cb2b99
+  original:
+    hackage: compact-word-vectors-0.2.0.2@sha256:e46c7c3186dafe1ae22434556ddec91af022f2360c57c30a46397758938f3acc,2617
+- completed:
     hackage: statistics-linreg-0.3@sha256:95c6efe6c7f6b26bc6e9ada90ab2d18216371cf59a6ef2b517b4a6fd35d9a76f,2544
     pantry-tree:
       size: 233

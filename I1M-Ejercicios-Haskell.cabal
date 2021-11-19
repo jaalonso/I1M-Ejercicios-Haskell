@@ -33,6 +33,7 @@ library
       Calculo_numerico_2_Limites_biseccion_e_integrales
       Calculo_numerico_Diferenciacion_y_metodos_de_Heron_y_de_Newton
       Combinatoria
+      Combinatoria_con_librerias
       Condicionales_guardas_y_patrones
       Definiciones_por_composicion
       Definiciones_por_comprension
@@ -77,6 +78,7 @@ library
     , QuickCheck
     , array
     , base >=4.7 && <5
+    , combinat
     , containers
     , gnuplot
     , hspec
@@ -98,6 +100,7 @@ test-suite spec
       BEE_El_problema_del_granjero_Spec
       Calculo_numerico_2_Limites_biseccion_e_integrales_Spec
       Calculo_numerico_Diferenciacion_y_metodos_de_Heron_y_de_Newton_Spec
+      Combinatoria_con_librerias_Spec
       Combinatoria_Spec
       Condicionales_guardas_y_patrones_Spec
       Definiciones_por_composicion_Spec
@@ -143,6 +146,7 @@ test-suite spec
     , QuickCheck
     , array
     , base
+    , combinat
     , containers
     , hspec
     , hspec-core

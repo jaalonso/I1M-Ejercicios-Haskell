@@ -54,6 +54,7 @@ library
       Implementacion_del_TAD_de_los_grafos_mediante_diccionarios
       Implementacion_del_TAD_de_los_grafos_mediante_listas
       Metodo_de_Gauss_para_triangularizar_matrices
+      Numeros_de_Lychrel
       Operaciones_con_conjuntos
       Operaciones_con_conjuntos_usando_la_libreria
       Operaciones_conjuntistas_con_listas
@@ -122,6 +123,7 @@ test-suite spec
       Implementacion_del_TAD_de_los_grafos_mediante_diccionarios_Spec
       Implementacion_del_TAD_de_los_grafos_mediante_listas_Spec
       Metodo_de_Gauss_para_triangularizar_matrices_Spec
+      Numeros_de_Lychrel_Spec
       Operaciones_con_conjuntos_Spec
       Operaciones_con_conjuntos_usando_la_libreria_Spec
       Operaciones_conjuntistas_con_listas_Spec

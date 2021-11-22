@@ -43,3 +43,4 @@ Sevilla) son las siguientes:
 + [[./src/Implementacion_del_TAD_de_los_grafos_mediante_listas.hs][Implementación del TAD de los grafos mediante listas]].
 + [[./src/Implementacion_del_TAD_de_los_grafos_mediante_diccionarios.hs][Implementación del TAD de los grafos mediante diccionarios]].
 + [[./src/Problemas_basicos_de_grafos.hs][Problemas básicos con el TAD de los grafos]].
++ [[./src/Numeros_de_Lychrel.hs][Números de Lychrel]].

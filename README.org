@@ -41,6 +41,7 @@ Sevilla) son las siguientes:
 + [[./src/Rompecabeza_del_triomino_mediante_divide_y_venceras.hs][Rompecabeza del triominó mediante divide y vencerás]].
 + [[./src/BEE_El_problema_del_granjero.hs][El problema del granjero mediante búsqueda en espacio de estado]].
 + [[./src/El_problema_de_las_fichas_mediante_busqueda_en_espacio_de_estado.hs][El problema de las fichas mediante búsqueda en espacio de estado]].
++ [[./src/El_problema_del_calendario_mediante_busqueda_en_espacio_de_estado.hs][El problema del calendario mediante búsqueda en espacio de estado]].
 + [[./src/Resolucion_de_problemas_mediante_busqueda_en_espacios_de_estados.hs][Resolución de problemas mediante búsqueda en espacios de estados]].
 + [[./src/Implementacion_del_TAD_de_los_grafos_mediante_listas.hs][Implementación del TAD de los grafos mediante listas]].
 + [[./src/Implementacion_del_TAD_de_los_grafos_mediante_diccionarios.hs][Implementación del TAD de los grafos mediante diccionarios]].

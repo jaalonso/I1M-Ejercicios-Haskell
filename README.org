@@ -50,3 +50,4 @@ Sevilla) son las siguientes:
 + [[./src/Numeros_de_Lychrel.hs][Números de Lychrel]].
 + [[./src/Codificacion_por_longitud.hs][Codificación por longitud]].
 + [[./src/La_sucesion_de_Kolakoski.hs][La sucesión de Kolakoski]].
++ [[./src/El_triangulo_de_Floyd.hs][El triángulo de Floyd]].

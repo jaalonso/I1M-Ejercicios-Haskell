@@ -49,3 +49,4 @@ Sevilla) son las siguientes:
 + [[./src/Ejercicios_sobre_grafos.hs][Ejercicios sobre grafos]].
 + [[./src/Numeros_de_Lychrel.hs][Números de Lychrel]].
 + [[./src/Codificacion_por_longitud.hs][Codificación por longitud]].
++ [[./src/La_sucesion_de_Kolakoski.hs][La sucesión de Kolakoski]].

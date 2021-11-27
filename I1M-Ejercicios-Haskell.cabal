@@ -57,6 +57,7 @@ library
       Funciones_sobre_cadenas
       Implementacion_del_TAD_de_los_grafos_mediante_diccionarios
       Implementacion_del_TAD_de_los_grafos_mediante_listas
+      La_sucesion_de_Kolakoski
       Metodo_de_Gauss_para_triangularizar_matrices
       Numeros_de_Lychrel
       Operaciones_con_conjuntos
@@ -131,6 +132,7 @@ test-suite spec
       Funciones_sobre_cadenas_Spec
       Implementacion_del_TAD_de_los_grafos_mediante_diccionarios_Spec
       Implementacion_del_TAD_de_los_grafos_mediante_listas_Spec
+      La_sucesion_de_Kolakoski_Spec
       Metodo_de_Gauss_para_triangularizar_matrices_Spec
       Numeros_de_Lychrel_Spec
       Operaciones_con_conjuntos_Spec

@@ -48,3 +48,4 @@ Sevilla) son las siguientes:
 + [[./src/Problemas_basicos_de_grafos.hs][Problemas básicos con el TAD de los grafos]].
 + [[./src/Ejercicios_sobre_grafos.hs][Ejercicios sobre grafos]].
 + [[./src/Numeros_de_Lychrel.hs][Números de Lychrel]].
++ [[./src/Codificacion_por_longitud.hs][Codificación por longitud]].

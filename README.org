@@ -51,3 +51,4 @@ Sevilla) son las siguientes:
 + [[./src/Codificacion_por_longitud.hs][Codificación por longitud]].
 + [[./src/La_sucesion_de_Kolakoski.hs][La sucesión de Kolakoski]].
 + [[./src/El_triangulo_de_Floyd.hs][El triángulo de Floyd]].
++ [[./src/La_sucesion_de_Hamming.hs][La sucesión de Hamming]].

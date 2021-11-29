@@ -32,6 +32,7 @@ library
       Calculo_del_numero_pi_mediante_el_metodo_de_Montecarlo
       Calculo_numerico_2_Limites_biseccion_e_integrales
       Calculo_numerico_Diferenciacion_y_metodos_de_Heron_y_de_Newton
+      Camino_de_maxima_suma_en_una_matriz
       Codificacion_por_longitud
       Combinatoria
       Combinatoria_con_librerias
@@ -109,6 +110,7 @@ test-suite spec
       BEE_El_problema_del_granjero_Spec
       Calculo_numerico_2_Limites_biseccion_e_integrales_Spec
       Calculo_numerico_Diferenciacion_y_metodos_de_Heron_y_de_Newton_Spec
+      Camino_de_maxima_suma_en_una_matriz_Spec
       Codificacion_por_longitud_Spec
       Combinatoria_con_librerias_Spec
       Combinatoria_Spec

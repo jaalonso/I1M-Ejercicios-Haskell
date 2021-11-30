@@ -53,3 +53,4 @@ Sevilla) son las siguientes:
 + [[./src/El_triangulo_de_Floyd.hs][El triángulo de Floyd]].
 + [[./src/La_sucesion_de_Hamming.hs][La sucesión de Hamming]].
 + [[./src/Camino_de_maxima_suma_en_una_matriz.hs][Camino de máxima suma en una matriz]].
++ [[./src/Enumeraciones_de_los_numeros_racionales.hs][Enumeraciones de los números racionales]].

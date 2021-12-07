@@ -39,6 +39,7 @@ library
       Condicionales_guardas_y_patrones
       Definiciones_por_composicion
       Definiciones_por_comprension
+      Definiciones_por_comprension_con_cadenas_El_cifrado_Cesar
       Definiciones_por_recursion
       Division_y_factorizacion_de_polinomios
       Ecuacion_con_factoriales
@@ -117,6 +118,7 @@ test-suite spec
       Combinatoria_Spec
       Condicionales_guardas_y_patrones_Spec
       Definiciones_por_composicion_Spec
+      Definiciones_por_comprension_con_cadenas_El_cifrado_Cesar_Spec
       Definiciones_por_comprension_Spec
       Definiciones_por_recursion_Spec
       Division_y_factorizacion_de_polinomios_Spec

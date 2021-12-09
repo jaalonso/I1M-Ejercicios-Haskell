@@ -57,3 +57,4 @@ Sevilla) son las siguientes:
 + [[./src/Definiciones_por_comprension_con_cadenas_El_cifrado_Cesar.hs][Definiciones por comprensión con cadenas: El cifrado César]].
 + [[./src/Mayorias_parlamentarias.hs][Mayorías parlamentarias]].
 + [[./src/Multiconjuntos_mediante_diccionarios.hs][El tipo abstracto de los multiconjuntos mediante diccionarios]].
++ [[./src/Analizadores_sintacticos.hs][Analizadores sintácticos]].

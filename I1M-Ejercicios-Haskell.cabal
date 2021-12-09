@@ -27,6 +27,7 @@ source-repository head
 library
   exposed-modules:
       Algoritmos_de_ordenacion_y_complejidad
+      Analizadores_sintacticos
       Aplicaciones_de_la_PF_con_listas_infinitas
       BEE_El_problema_del_granjero
       Calculo_del_numero_pi_mediante_el_metodo_de_Montecarlo
@@ -110,6 +111,7 @@ test-suite spec
   main-is: Spec.hs
   other-modules:
       Algoritmos_de_ordenacion_y_complejidad_Spec
+      Analizadores_sintacticos_Spec
       Aplicaciones_de_la_PF_con_listas_infinitas_Spec
       BEE_El_problema_del_granjero_Spec
       Calculo_numerico_2_Limites_biseccion_e_integrales_Spec

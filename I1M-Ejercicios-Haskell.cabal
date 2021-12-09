@@ -65,6 +65,7 @@ library
       La_sucesion_de_Kolakoski
       Mayorias_parlamentarias
       Metodo_de_Gauss_para_triangularizar_matrices
+      Multiconjuntos_mediante_diccionarios
       Numeros_de_Lychrel
       Operaciones_con_conjuntos
       Operaciones_con_conjuntos_usando_la_libreria
@@ -146,6 +147,7 @@ test-suite spec
       La_sucesion_de_Kolakoski_Spec
       Mayorias_parlamentarias_Spec
       Metodo_de_Gauss_para_triangularizar_matrices_Spec
+      Multiconjuntos_mediante_diccionarios_Spec
       Numeros_de_Lychrel_Spec
       Operaciones_con_conjuntos_Spec
       Operaciones_con_conjuntos_usando_la_libreria_Spec

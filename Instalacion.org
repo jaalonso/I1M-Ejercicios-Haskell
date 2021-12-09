@@ -1,0 +1,28 @@
+#+TITLE: Instalación de los códigos de los ejercicios de I1M
+
+En la siguiente descripción se comenta la instalación en Ubuntu, pero se puede
+aplicar a otros sistemas operativos de manera análoga.
+
++ Descargar el [[https://github.com/jaalonso/I1M-Ejercicios-Haskell][repositorio con los códigos de los ejercicios de I1M]]:
+  : wget https://github.com/jaalonso/I1M-Ejercicios-Haskell/archive/master.zip
+
++ Descomprimirlo y borrarlo:
+  : unzip master.zip ; rm master.zip
+  Se crea el directorio ~I1M-Ejercicios-Haskell-master~).
+
++ Cambiar al directorio ~I1M-Ejercicios-Haskell-master~:
+  : cd I1M-Ejercicios-Haskell-master
+
++ Comprobar si se tiene instalada la versión 2.7.1 de [[https://docs.haskellstack.org/en/stable/README/][The Haskell Tool Stack]]
+  : stack --version
+  + Si no tiene instalada ninguna versión, instalarla con usando
+    [[https://docs.haskellstack.org/en/stable/README/#how-to-install][sus instrucciones de instalación]]. En Ubuntu se instala con
+    : sudo wget -qO- https://get.haskellstack.org/ | sh
+  + Si la versión instalada de stack no es la 2.7.1, actualizarla con
+    : stack upgrade
+
++ Construir el proyecto con
+  : stack build
+
++ Comprobar los ejemplos con
+  : stack test

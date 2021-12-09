@@ -22,3 +22,12 @@ cabal.project.local~
 .HTF/
 .ghc.environment.*
 /README_v1.org
+*.log
+*.toc
+libro/_minted-Ejercicios-Haskell/
+libro/auto/Ejercicios-Haskell.el
+libro/auto/definiciones.el
+libro/*.png
+libro/*.tex
+libro/licencia*
+libro/Makefile

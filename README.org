@@ -55,3 +55,4 @@ Sevilla) son las siguientes:
 + [[./src/Camino_de_maxima_suma_en_una_matriz.hs][Camino de máxima suma en una matriz]].
 + [[./src/Enumeraciones_de_los_numeros_racionales.hs][Enumeraciones de los números racionales]].
 + [[./src/Definiciones_por_comprension_con_cadenas_El_cifrado_Cesar.hs][Definiciones por comprensión con cadenas: El cifrado César]].
++ [[./src/Mayorias_parlamentarias.hs][Mayorías parlamentarias]].

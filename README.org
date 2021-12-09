@@ -58,3 +58,4 @@ Sevilla) son las siguientes:
 + [[./src/Mayorias_parlamentarias.hs][Mayorías parlamentarias]].
 + [[./src/Multiconjuntos_mediante_diccionarios.hs][El tipo abstracto de los multiconjuntos mediante diccionarios]].
 + [[./src/Analizadores_sintacticos.hs][Analizadores sintácticos]].
++ [[./src/Modelizacion_de_juego_de_cartas.hs][Tipos de datos: Modelización de juego de cartas]].

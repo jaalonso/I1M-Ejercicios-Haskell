@@ -14,16 +14,14 @@ Se puede instalar como se explica en la [[./Instalacion.org][Guía de instalaci�
 
 ** Definiciones por comprensión (tema 5)
 + [[./src/Definiciones_por_comprension.hs][Definiciones por comprensión]].
++ [[./src/Definiciones_por_comprension_con_cadenas_El_cifrado_Cesar.hs][Definiciones por comprensión con cadenas: El cifrado César]].
 
 ** Definiciones por recursión (tema 6)
 + [[./src/Definiciones_por_recursion.hs][Definiciones por recursión]].
 + [[./src/Operaciones_conjuntistas_con_listas.hs][Operaciones conjuntistas con listas]].
 + [[./src/El_algoritmo_de_Luhn.hs][El algoritmo de Luhn]].
 + [[./src/Numeros_de_Lychrel.hs][Números de Lychrel]].
-
-** Funciones sobre cadenas (temas 5 y 6)
 + [[./src/Funciones_sobre_cadenas.hs][Funciones sobre cadenas]].
-+ [[./src/Definiciones_por_comprension_con_cadenas_El_cifrado_Cesar.hs][Definiciones por comprensión con cadenas: El cifrado César]].
 + [[./src/Codificacion_por_longitud.hs][Codificación por longitud]].
 
 ** Funciones de orden superior (tema 7)

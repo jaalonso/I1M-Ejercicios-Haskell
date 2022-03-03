@@ -34,6 +34,7 @@ Se puede instalar como se explica en la [[./Instalacion.org][Guía de instalaci�
 + [[./src/Tipos_de_datos_algebraicos.hs][Tipos de datos algebraicos]].
 + [[./src/Modelizacion_de_juego_de_cartas.hs][Tipos de datos: Modelización de juego de cartas]].
 + [[./src/Mayorias_parlamentarias.hs][Mayorías parlamentarias]].
++ [[./src/Cadenas_de_bloques.hs][Cadenas de bloques]].
 
 ** Listas infinitas (tema 10)
 + [[./src/Evaluacion_perezosa_y_listas_infinitas.hs][Evaluación perezosa y listas infinitas]].

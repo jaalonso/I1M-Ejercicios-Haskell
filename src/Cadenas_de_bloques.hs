@@ -358,5 +358,5 @@ prefijo n c@(Bloque d _)
 -- § Referencias                                                      --
 -- ---------------------------------------------------------------------
 
--- Esta relación de ejercicio es una adaptación de la de Lars Brünjes
+-- Esta relación de ejercicios es una adaptación de la de Lars Brünjes
 -- "Chain.hs" https://bit.ly/3IHrdBX

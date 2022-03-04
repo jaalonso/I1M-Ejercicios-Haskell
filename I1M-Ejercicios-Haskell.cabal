@@ -81,8 +81,10 @@ library
       Relaciones_binarias_homogeneas_con_la_libreria
       Resolucion_de_problemas_mediante_busqueda_en_espacios_de_estados
       Rompecabeza_del_triomino_mediante_divide_y_venceras
+      Tipos_de_datos
       Tipos_de_datos_algebraicos
       Tipos_de_datos_algebraicos_Arboles_binarios
+      Tipos_de_datos_Spec
       Vectores_y_matrices
       Vectores_y_matrices_con_las_librerias
   other-modules:

@@ -138,7 +138,7 @@ mapMaybe' :: (a -> b) -> Maybe a -> Maybe b
 mapMaybe' = (<$>)
 
 -- ---------------------------------------------------------------------
--- Ejercicio 7. Definir la función
+-- Ejercicio 9. Definir la función
 --    parMaybe :: Maybe a -> Maybe b -> Maybe (a, b)
 -- tal que (parMaybe m1 m2) es jost el par de los contenidos de m1 y m2
 -- si ambos tienen contenido y Nothing en caso contrario. Por ejemplo,
@@ -151,7 +151,7 @@ parMaybe (Just x) (Just y) = Just (x, y)
 parMaybe _        _        = Nothing
 
 -- ---------------------------------------------------------------------
--- Ejercicio 7. Definir la función
+-- Ejercicio 10. Definir la función
 --    liftMaybe :: (a -> b -> c) -> Maybe a -> Maybe b -> Maybe c
 -- tal que (liftMaybe f m1 m2) es el resultado de aplicar f a los
 -- contenidos de m1 y m2 si tienen contenido y Nothing, en caso
@@ -168,7 +168,7 @@ liftMaybe f (Just a) (Just b) = Just (f a b)
 liftMaybe _ _        _        = Nothing
 
 -- ---------------------------------------------------------------------
--- Ejercicio 9. Definir, usando liftMaybe, la función
+-- Ejercicio 11. Definir, usando liftMaybe, la función
 --    parMaybe' :: Maybe a -> Maybe b -> Maybe (a, b)
 -- tal que (parMaybe' m1 m2) es jost el par de los contenidos de m1 y m2
 -- si ambos tienen contenido y Nothing en caso contrario. Por ejemplo,
@@ -180,7 +180,7 @@ parMaybe' :: Maybe a -> Maybe b -> Maybe (a, b)
 parMaybe' = liftMaybe (,)
 
 -- ---------------------------------------------------------------------
--- Ejercicio 7. Comprobar con QuickCheck que las funciones parMaybe e
+-- Ejercicio 12. Comprobar con QuickCheck que las funciones parMaybe e
 -- parMaybe' son equivalentes.
 -- ---------------------------------------------------------------------
 
@@ -194,7 +194,7 @@ prop_parMaybe_parMaybe' x y =
 --    +++ OK, passed 100 tests.
 
 -- ---------------------------------------------------------------------
--- Ejercicio 10. Definir la función
+-- Ejercicio 13. Definir la función
 --    sumaMaybes :: Maybe Int -> Maybe Int -> Maybe Int
 -- tal que (sumaMaybes m1 m2) es la suma de los contenidos de m1 y m2 si
 -- tienen contenido y Nothing, en caso contrario. Por ejemplo,
@@ -208,7 +208,7 @@ sumaMaybes :: Maybe Int -> Maybe Int -> Maybe Int
 sumaMaybes = liftMaybe (+)
 
 -- ---------------------------------------------------------------------
--- Ejercicio 12. Definir (usando 'parMaybe', 'uncurry' y 'mapMaybe') la
+-- Ejercicio 14. Definir (usando 'parMaybe', 'uncurry' y 'mapMaybe') la
 -- función
 --    sumaMaybes' :: Maybe Int -> Maybe Int -> Maybe Int
 -- tal que (addMaybe's m1 m2) es la suma de los contenidos de m1 y m2 si
@@ -223,7 +223,7 @@ sumaMaybes' :: Maybe Int -> Maybe Int -> Maybe Int
 sumaMaybes' x y = mapMaybe (uncurry (+)) (parMaybe x y)
 
 -- ---------------------------------------------------------------------
--- Ejercicio 7. Comprobar con QuickCheck que las funciones sumaMaybes y
+-- Ejercicio 15. Comprobar con QuickCheck que las funciones sumaMaybes y
 -- sumaMaybes' son equivalentes.
 -- ---------------------------------------------------------------------
 
@@ -237,7 +237,7 @@ prop_sumaMaybes_sumaMaybes' x y =
 --    +++ OK, passed 100 tests.
 
 -- ---------------------------------------------------------------------
--- Ejercicio 13. Definir, usando liftA2, la función
+-- Ejercicio 16. Definir, usando liftA2, la función
 --    liftMaybe' :: (a -> b -> c) -> Maybe a -> Maybe b -> Maybe c
 -- tal que (liftMaybe's f m1 m2) es el resultado de aplicar f a los
 -- contenidos de m1 y m2 si tienen contenido y Nothing, en caso
@@ -257,7 +257,7 @@ liftMaybe' = liftA2
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
--- Ejercicio 14. Definir la función
+-- Ejercicio 17. Definir la función
 --    aplicaAmbas :: (a -> b) -> (a -> c) -> a -> (b, c)
 -- tal que (aplicaAmbas f g x) es el par obtenido aplicándole a x las
 -- funciones f y g. Por ejemplo,
@@ -272,7 +272,7 @@ aplicaAmbas f g a = (f a, g a)
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
--- Ejercicio 15. Definir la función
+-- Ejercicio 18. Definir la función
 --    (++) :: [a] -> [a] -> [a]
 -- tal que (xs ++ ys) es la concatenación de xs e ys. Por ejemplo,
 --    [2,3] ++ [4,5,1]  ==  [2,3,4,5,1]
@@ -283,7 +283,7 @@ aplicaAmbas f g a = (f a, g a)
 (x:xs) ++ ys = x : (xs ++ ys)
 
 -- ---------------------------------------------------------------------
--- Ejercicio 16. Definir la función
+-- Ejercicio 19. Definir la función
 --    or :: [Bool] -> Bool
 -- tal que (or xs) se verifca si algún elemento de xs es verdadero. Por
 -- ejemplo,
@@ -297,7 +297,7 @@ or (True : _)   = True
 or (False : bs) = or bs
 
 -- ---------------------------------------------------------------------
--- Ejercicio 17. Definir la función
+-- Ejercicio 20. Definir la función
 --    reverse :: [a] -> [a]
 -- tal que (reverse xs) es la inversa de xs. Por ejemplo,
 --    reverse [4,2,5]  ==  [5,2,4]
@@ -308,7 +308,7 @@ reverse []       = []
 reverse (x : xs) = reverse xs ++ [x]
 
 -- ---------------------------------------------------------------------
--- Ejercicio 18. Definir (sin usar reverse ni ++) la función
+-- Ejercicio 21. Definir (sin usar reverse ni ++) la función
 --    reverseAcc :: [a] -> [a] -> [a]
 -- tal que (reverseAcc xs ys) es la concatención de xs y la inversa de
 -- ys. Por ejemplo,
@@ -320,7 +320,7 @@ reverseAcc acc []       = acc
 reverseAcc acc (x : xs) = reverseAcc (x : acc) xs
 
 -- ---------------------------------------------------------------------
--- Ejercicio 19. Definir, usando reverseAcc, la función
+-- Ejercicio 22. Definir, usando reverseAcc, la función
 --    reverse' :: [a] -> [a]
 -- tal que (reverse' xs) es la inversa de xs. Por ejemplo,
 --    reverse' [4,2,5]  ==  [5,2,4]
@@ -330,7 +330,7 @@ reverse' :: [a] -> [a]
 reverse' = reverseAcc []
 
 -- ---------------------------------------------------------------------
--- Ejercicio 7. Comprobar con QuickCheck que las funciones reverse y
+-- Ejercicio 23. Comprobar con QuickCheck que las funciones reverse y
 -- reverse' son equivalentes.
 -- ---------------------------------------------------------------------
 
@@ -344,7 +344,7 @@ prop_reverse_reverse' xs =
 --    +++ OK, passed 100 tests.
 
 -- ---------------------------------------------------------------------
--- Ejercicio 20. Comparar la eficiencia de reverse y reverse' calculando
+-- Ejercicio 24. Comparar la eficiencia de reverse y reverse' calculando
 -- el tiempo de las siguientes evaluaciones
 --    last (reverse [1..10^4])
 --    last (reverse' [1..10^4])
@@ -360,7 +360,7 @@ prop_reverse_reverse' xs =
 --    (0.01 secs, 2,321,888 bytes)
 
 -- ---------------------------------------------------------------------
--- Ejercicio 21. Definir la función
+-- Ejercicio 25. Definir la función
 --    filter :: (a -> Bool) -> [a] -> [a]
 -- tal que (filter p xs) es la lista de los elementos de xs que cumplen
 -- la propiedad p. Por ejmplo,
@@ -375,7 +375,7 @@ filter p (x : xs)
   | otherwise   = filter p xs
 
 -- ---------------------------------------------------------------------
--- Ejercicio 22. Definir la función
+-- Ejercicio 26. Definir la función
 --    divisores :: Integral a => a -> [a]
 -- tal que (divisores n) es la lista de los divisores de n. Por ejemplo,
 --    divisores 24  ==  [1,2,3,4,6,8,12,24]
@@ -385,7 +385,7 @@ divisores :: Integral a => a -> [a]
 divisores n = filter (\x -> mod n x == 0) [1 .. n]
 
 -- ---------------------------------------------------------------------
--- Ejercicio 23. Definir la función
+-- Ejercicio 27. Definir la función
 --    esPrimo :: Integral a => a -> Bool
 -- tal que (esPrimo n) se verifica si n esprimo. Por ejemplo,
 --    esPrimo 7  ==  True
@@ -396,7 +396,7 @@ esPrimo :: Integral a => a -> Bool
 esPrimo n = divisores n == [1, n]
 
 -- ---------------------------------------------------------------------
--- Ejercicio 24. Definir la lista
+-- Ejercicio 28. Definir la lista
 --    milPrimos :: [Int]
 -- formada por los 1000 primeros números primos.
 -- ---------------------------------------------------------------------
@@ -409,7 +409,7 @@ milPrimos = take 1000 (filter esPrimo [1 ..])
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
--- Ejercicio 25. Definir el tipo de datos Arbol para los árboles
+-- Ejercicio 29. Definir el tipo de datos Arbol para los árboles
 -- binarios, con valores sólo en las hojas.
 -- ---------------------------------------------------------------------
 
@@ -425,7 +425,7 @@ arbol3 = Nodo arbol2 arbol1
 arbol4 = Nodo arbol2 arbol3
 
 -- ---------------------------------------------------------------------
--- Ejercicio 26. Definir la función
+-- Ejercicio 30. Definir la función
 --    altura :: Arbol a -> Int
 -- tal que (altura t) es la altura del árbol t. Por ejemplo,
 --    λ> altura (Nodo (Hoja 3) (Nodo (Nodo (Hoja 1) (Hoja 7)) (Hoja 2)))
@@ -437,7 +437,7 @@ altura (Hoja _)   = 0
 altura (Nodo l r) = 1 + max (altura l) (altura r)
 
 -- ---------------------------------------------------------------------
--- Ejercicio 27. Definir la función
+-- Ejercicio 31. Definir la función
 --    mapArbol :: (a -> b) -> Arbol a -> Arbol b
 -- tal que (mapArbol f t) es el árbolo obtenido aplicando la función f a
 -- los elementos del árbol t. Por ejemplo,
@@ -450,7 +450,7 @@ mapArbol f (Hoja a)   = Hoja (f a)
 mapArbol f (Nodo l r) = Nodo (mapArbol f l) (mapArbol f r)
 
 -- ---------------------------------------------------------------------
--- Ejercicio 28. Definir la función
+-- Ejercicio 32. Definir la función
 --    mismaForma :: Arbol a -> Arbol b -> Bool
 -- tal que (mismaForma t1 t2) se verifica si t1 y t2 tienen la misma
 -- estructura. Por ejemplo,
@@ -464,7 +464,7 @@ mismaForma (Nodo l r) (Nodo l' r') = mismaForma l l' && mismaForma r r'
 mismaForma _          _            = False
 
 -- ---------------------------------------------------------------------
--- Ejercicio 29. Definir (usando ==, mapArbol, const y ()) la función
+-- Ejercicio 33. Definir (usando ==, mapArbol, const y ()) la función
 --    mismaForma' :: Arbol a -> Arbol b -> Bool
 -- tal que (mismaForma' t1 t2) se verifica si t1 y t2 tienen la misma
 -- estructura. Por ejemplo,
@@ -478,7 +478,7 @@ mismaForma' x y = f x == f y
     f = mapArbol (const ())
 
 -- ---------------------------------------------------------------------
--- Ejercicio ?. Definir el procedimiento
+-- Ejercicio 34. Definir el procedimiento
 --    arbolArbitrario :: Arbitrary a => Int -> Gen (Arbol a)
 -- tal que (arbolArbitrario n) es un árbol aleatorio de altura n. Por
 -- ejemplo,
@@ -503,7 +503,7 @@ arbolArbitrario n
       Nodo <$> arbolArbitrario k <*> arbolArbitrario (n - k)
 
 -- ---------------------------------------------------------------------
--- Ejercicio ?. Declarar Arbol como subclase de Arbitraria usando el
+-- Ejercicio 35. Declarar Arbol como subclase de Arbitraria usando el
 -- generador arbolArbitrario.
 -- ---------------------------------------------------------------------
 
@@ -516,7 +516,7 @@ instance Arbitrary a => Arbitrary (Arbol a) where
                       [Nodo l r' | r' <- shrink r]
 
 -- ---------------------------------------------------------------------
--- Ejercicio 7. Comprobar con QuickCheck que las funciones mismaForma y
+-- Ejercicio 36. Comprobar con QuickCheck que las funciones mismaForma y
 -- mismaForma' son equivalentes.
 -- ---------------------------------------------------------------------
 
@@ -530,7 +530,7 @@ prop_mismaForma_mismaForma' a1 a2 =
 --    +++ OK, passed 100 tests.
 
 -- ---------------------------------------------------------------------
--- Ejercicio 30. Definir la función
+-- Ejercicio 37. Definir la función
 --    creaArbol :: Int -> Arbol ()
 -- tal que (creaArbol n) es el árbol cuyas hoyas están en la profundidad
 -- n. Por ejemplo,
@@ -544,7 +544,7 @@ creaArbol h
   | otherwise = let x = creaArbol (h - 1) in Nodo x x
 
 -- ---------------------------------------------------------------------
--- Ejercicio 31. Definir la función
+-- Ejercicio 38. Definir la función
 --    injerta :: Arbol (Arbol a) -> Arbol a
 -- tal que (injerta t) es el árbol obtenido sustituyendo cada hoja por el
 -- árbol que contiene. Por ejemplo,
@@ -561,7 +561,7 @@ injerta (Nodo l r) = Nodo (injerta l) (injerta r)
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
--- Ejercicio ?. Definir el tipo de las expresiones aritméticas formada
+-- Ejercicio 39. Definir el tipo de las expresiones aritméticas formada
 -- por
 -- + literales (p.e. Lit 7),
 -- + sumas (p.e. Suma (Lit 7) (Suma (Lit 3) (Lit 5)))
@@ -582,7 +582,7 @@ expr1 = Op (Suma (Lit 3) (Lit 5))
 expr2 = SiCero expr1 (Lit 1) (Lit 0)
 
 -- ---------------------------------------------------------------------
--- Ejercicio 32. Definir la función
+-- Ejercicio 40. Definir la función
 --    valor :: Expr -> Int
 -- tal que (valor e) es el valor de la expresión e (donde el valor de
 -- (SiCero e e1 e2) es el valor de e1 si el valor de e es cero y el es
@@ -599,7 +599,7 @@ valor (SiCero x y z) | valor x == 0 = valor y
                      | otherwise    = valor z
 
 -- ---------------------------------------------------------------------
--- Ejercicio 33. Definir la función
+-- Ejercicio 41. Definir la función
 --    resta :: Expr -> Expr -> Expr
 -- tal que (resta e1 e2) es la expresión correspondiente a la diferencia
 -- de e1 y e2. Por ejemplo,
@@ -610,7 +610,7 @@ resta :: Expr -> Expr -> Expr
 resta x y = Suma x (Op y)
 
 -- ---------------------------------------------------------------------
--- Ejercicio ?. Definir el procedimiento
+-- Ejercicio 42. Definir el procedimiento
 --    exprArbitraria :: Int -> Gen Expr
 -- tal que (exprArbitraria n) es una expresión aleatoria de tamaño n. Por
 -- ejemplo,
@@ -643,7 +643,7 @@ exprArbitraria n
                 ]
 
 -- ---------------------------------------------------------------------
--- Ejercicio ?. Declarar Expr como subclase de Arbitraria usando el
+-- Ejercicio 43. Declarar Expr como subclase de Arbitraria usando el
 -- generador exprArbitraria-
 -- ---------------------------------------------------------------------
 
@@ -651,7 +651,7 @@ instance Arbitrary Expr where
   arbitrary = sized exprArbitraria
 
 -- ---------------------------------------------------------------------
--- Ejercicio ?. Comprobar con QuickCheck que
+-- Ejercicio 44. Comprobar con QuickCheck que
 --    valor (resta x y) == valor x - valor y
 -- ---------------------------------------------------------------------
 
@@ -665,7 +665,7 @@ prop_resta x y =
 --    +++ OK, passed 100 tests.
 
 -- ---------------------------------------------------------------------
--- Ejercicio 34. Definir la función
+-- Ejercicio 45. Definir la función
 --    numeroOps :: Expr -> Int
 -- tal que (numeroOps e) es el número de operaciones de e. Por ejemplo,
 --    numeroOps (Lit 3)                      ==  0
@@ -679,7 +679,7 @@ numeroOps (Op x)         = 1 + numeroOps x
 numeroOps (SiCero x y z) = 1 + numeroOps x + numeroOps y + numeroOps z
 
 -- ---------------------------------------------------------------------
--- Ejercicio 35. Definir la función
+-- Ejercicio 46. Definir la función
 --    cadenaExpr :: Expr -> String
 -- tal que (cadenaExpr e) es la cadena que representa la expresión e. Por
 -- ejemplo,

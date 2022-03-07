@@ -53,25 +53,6 @@ Se puede instalar como se explica en la [[./Instalacion.org][Guía de instalaci�
 + [[./src/El_juego_del_nim.hs][El juego del nim y las funciones de entrada/salida]].
 + [[./src/Calculo_del_numero_pi_mediante_el_metodo_de_Montecarlo.hs][Cálculo del número pi mediante el método de Montecarlo]].
 
-* Aplicaciones a las matemáticas
-
-** Álgebra lineal
-+ [[./src/Vectores_y_matrices.hs][Vectores y matrices]].
-+ [[./src/Metodo_de_Gauss_para_triangularizar_matrices.hs][Método de Gauss para triangularizar matrices]].
-+ [[./src/Vectores_y_matrices_con_las_librerias.hs][Vectores y matrices con las librerías]].
-
-** Cálculo numérico
-+ [[./src/Calculo_numerico_Diferenciacion_y_metodos_de_Heron_y_de_Newton.hs][Cálculo numérico: Diferenciación y métodos de Herón y de Newton]].
-+ [[./src/Calculo_numerico_2_Limites_biseccion_e_integrales.hs][Cálculo numérico (2): límites, bisección e integrales]].
-
-** Estadística
-+ [[./src/Estadistica_descriptiva.hs][Estadística descriptiva]].
-+ [[./src/Estadistica_descriptiva_con_librerias.hs][Estadística descriptiva con librerías]].
-
-** Combinatoria
-+ [[./src/Combinatoria.hs][Combinatoria]].
-+ [[./src/Combinatoria_con_librerias.hs][Combinatoria con librerías]].
-
 * Algorítmica
 
 ** Análisis de la complejidad de los algoritmos (tema 28)
@@ -89,6 +70,10 @@ Se puede instalar como se explica en la [[./Instalacion.org][Guía de instalaci�
 + [[./src/Relaciones_binarias_homogeneas.hs][Relaciones binarias homogéneas]].
 + [[./src/Relaciones_binarias_homogeneas_con_la_libreria.hs][Relaciones binarias homogéneas con la librería Data.Set]].
 + [[./src/Multiconjuntos_mediante_diccionarios.hs][El tipo abstracto de los multiconjuntos mediante diccionarios]].
+
+** El tipo abstracto de datos de las tablas (tema 18)
++ [[./src/Tablas.hs][El tipo abstracto de las tablas]].
++ [[./src/Tablas_y_diccionarios.hs][Correspondencia entre tablas y diccionarios]].
 
 ** El tipo abstracto de datos de los montículos (tema 20)
 + [[./src/El_TAD_de_los_monticulos.hs][El tipo abstracto de datos de los montículos]].
@@ -116,3 +101,22 @@ Se puede instalar como se explica en la [[./Instalacion.org][Guía de instalaci�
 + [[./src/Programacion_dinamica_Turista_en_Manhattan.hs][Programación dinámica: Turista en Manhattan]].
 + [[./src/Programacion_dinamica_Apilamiento_de_barriles.hs][Programación dinámica: Apilamiento de barriles]].
 + [[./src/Camino_de_maxima_suma_en_una_matriz.hs][Camino de máxima suma en una matriz]].
+
+* Aplicaciones a las matemáticas
+
+** Álgebra lineal
++ [[./src/Vectores_y_matrices.hs][Vectores y matrices]].
++ [[./src/Metodo_de_Gauss_para_triangularizar_matrices.hs][Método de Gauss para triangularizar matrices]].
++ [[./src/Vectores_y_matrices_con_las_librerias.hs][Vectores y matrices con las librerías]].
+
+** Cálculo numérico
++ [[./src/Calculo_numerico_Diferenciacion_y_metodos_de_Heron_y_de_Newton.hs][Cálculo numérico: Diferenciación y métodos de Herón y de Newton]].
++ [[./src/Calculo_numerico_2_Limites_biseccion_e_integrales.hs][Cálculo numérico (2): límites, bisección e integrales]].
+
+** Estadística
++ [[./src/Estadistica_descriptiva.hs][Estadística descriptiva]].
++ [[./src/Estadistica_descriptiva_con_librerias.hs][Estadística descriptiva con librerías]].
+
+** Combinatoria
++ [[./src/Combinatoria.hs][Combinatoria]].
++ [[./src/Combinatoria_con_librerias.hs][Combinatoria con librerías]].

@@ -81,6 +81,8 @@ library
       Relaciones_binarias_homogeneas_con_la_libreria
       Resolucion_de_problemas_mediante_busqueda_en_espacios_de_estados
       Rompecabeza_del_triomino_mediante_divide_y_venceras
+      Tablas
+      Tablas_y_diccionarios
       Tipos_de_datos
       Tipos_de_datos_algebraicos
       Tipos_de_datos_algebraicos_Arboles_binarios
@@ -168,6 +170,8 @@ test-suite spec
       Relaciones_binarias_homogeneas_Spec
       Resolucion_de_problemas_mediante_busqueda_en_espacios_de_estados_Spec
       Rompecabeza_del_triomino_mediante_divide_y_venceras_Spec
+      Tablas_Spec
+      Tablas_y_diccionarios_Spec
       Tipos_de_datos_algebraicos_Arboles_binarios_Spec
       Tipos_de_datos_algebraicos_Spec
       Vectores_y_matrices_con_las_librerias_Spec

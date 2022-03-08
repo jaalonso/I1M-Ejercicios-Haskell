@@ -74,7 +74,7 @@ Se puede instalar como se explica en la [[./Instalacion.org][Guía de instalaci�
 ** El tipo abstracto de datos de las tablas (tema 18)
 + [[./src/Tablas.hs][El tipo abstracto de las tablas]].
 + [[./src/Tablas_y_diccionarios.hs][Correspondencia entre tablas y diccionarios]].
-+ [[./sr/Transacciones.hs][Transacciones]].
++ [[./src/Transacciones.hs][Transacciones]].
 
 ** El tipo abstracto de datos de los montículos (tema 20)
 + [[./src/El_TAD_de_los_monticulos.hs][El tipo abstracto de datos de los montículos]].

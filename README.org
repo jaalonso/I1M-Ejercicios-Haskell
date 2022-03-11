@@ -77,6 +77,9 @@ Se puede instalar como se explica en la [[./Instalacion.org][Guía de instalaci�
 + [[./src/Tablas_y_diccionarios.hs][Correspondencia entre tablas y diccionarios]].
 + [[./src/Transacciones.hs][Transacciones]].
 
+** El tipo abstracto de datos de las árboles binarios de búsqueda (tema 19)
++ [[./src/Arboles_binarios_de_busqueda.hs][Árboles binarios de búsqueda]].
+
 ** El tipo abstracto de datos de los montículos (tema 20)
 + [[./src/El_TAD_de_los_monticulos.hs][El tipo abstracto de datos de los montículos]].
 

@@ -4,10 +4,25 @@
 -- Sevilla, 11-marzo-2022
 -- ---------------------------------------------------------------------
 
+-- ---------------------------------------------------------------------
+-- Introducción                                                       --
+-- ---------------------------------------------------------------------
+
+-- Esta relación contiene ejercicios con definiciones por plegado
+-- correspondientes al tema 7 que se encuentra en
+--    https://jaalonso.github.io/cursos/i1m/temas/tema-7.html
+-- Además, se compara con las definiciones recursivas, con acumuladores
+-- y con evaluación impaciente. Finalmente, se define la función de
+-- plegado para los árboles binarios.
+
 {-# LANGUAGE BangPatterns        #-}
 {-# LANGUAGE ScopedTypeVariables #-}
 
 module Definiciones_por_plegados where
+
+-- ---------------------------------------------------------------------
+-- Importación de librerías auxiliares                                --
+-- ---------------------------------------------------------------------
 
 import Data.List (foldl')
 import Test.QuickCheck
@@ -190,9 +205,8 @@ prop_inversa xs =
 --    5000000
 --    (0.48 secs, 480,343,848 bytes)
 
-
 -- ---------------------------------------------------------------------
--- Ejercicio 38. Definir la función
+-- Ejercicio 3. Definir la función
 --    coge :: Int -> [a] -> [a]
 -- tal que (coge n xs) es la lista formada por los n primeros elementos
 -- de xs. Por ejemplo,
@@ -245,7 +259,7 @@ prop_coge n xs =
 --    (0.08 secs, 384,343,800 bytes)
 
 -- ---------------------------------------------------------------------
--- Ejercicio 39. Definir la función
+-- Ejercicio 4. Definir la función
 --    nFoldl :: forall a b. (b -> a -> b) -> b -> [a] -> b
 -- tal que (nFoldl f e xs) pliega xs de izquierda a derecha usando el
 -- operador f y el valor inicial e. Por ejemplo,
@@ -283,7 +297,7 @@ nFoldl3 = foldl
 --    (1.08 secs, 535,732,976 bytes)
 
 -- ---------------------------------------------------------------------
--- Ejercicio 3. Los siguientes árboles  binarios
+-- Ejercicio 5. Los siguientes árboles  binarios
 --         9                9
 --        / \              /
 --       /   \            /
@@ -305,7 +319,7 @@ data Arbol a = N (Arbol a) a (Arbol a)
   deriving (Eq, Show)
 
 -- ---------------------------------------------------------------------
--- Ejercicio 4. Definir el procedimiento
+-- Ejercicio 6. Definir el procedimiento
 --    arbolArbitrario :: Arbitrary a => Int -> Gen (Arbol a)
 -- tal que (arbolArbitrario n) es un árbol aleatorio de altura n. Por
 -- ejemplo,
@@ -331,7 +345,7 @@ arbolArbitrario n
       N <$> arbolArbitrario k <*> arbitrary <*> arbolArbitrario (n - k)
 
 -- ---------------------------------------------------------------------
--- Ejercicio 5. Declarar Arbol como subclase de Arbitraria usando el
+-- Ejercicio 7. Declarar Arbol como subclase de Arbitraria usando el
 -- generador arbolArbitrario.
 -- ---------------------------------------------------------------------
 
@@ -345,7 +359,19 @@ instance Arbitrary a => Arbitrary (Arbol a) where
                      [N i  x  d' | d' <- shrink d]
 
 -- ---------------------------------------------------------------------
--- Ejercicio 40. Definir la función
+-- Ejercicio 8. Definir la función
+--    aplana :: Arbol a -> [a]
+-- tal que (aplana a) es la lista obtenida aplanando el árbol a. Por
+-- ejemplo,
+--    aplana (N (N V 2 V) 5 V)  ==  [2,5]
+-- ---------------------------------------------------------------------
+
+aplana :: Arbol a -> [a]
+aplana V         = []
+aplana (N i x d) = aplana i ++ [x] ++ aplana d
+
+-- ---------------------------------------------------------------------
+-- Ejercicio 9. Definir la función
 --    foldrArbol :: (a -> b -> b) -> b -> Arbol a -> b
 -- tal que (foldrArbol f e) pliega el árbol a de derecha a izquierda
 -- usando el operador f y el valor inicial e. Por ejemplo,
@@ -357,7 +383,7 @@ foldrArbol :: (a -> b -> b) -> b -> Arbol a -> b
 foldrArbol f e = foldr f e . aplana
 
 -- ---------------------------------------------------------------------
--- Ejercicio 41. Declarar el tipo Arbol una instancia de la clase
+-- Ejercicio 10. Declarar el tipo Arbol una instancia de la clase
 -- Foldable.
 -- ---------------------------------------------------------------------
 
@@ -365,7 +391,7 @@ instance Foldable Arbol where
   foldr = foldrArbol
 
 -- ---------------------------------------------------------------------
--- Ejercicio 42. Dado el árbol
+-- Ejercicio 11. Dado el árbol
 --    a = N (N (N (N V 8 V) 2 V) 6 V) 4 V
 -- Calcular su longitud, máximo, mínimo, suma, producto y lista de
 -- elementos.
@@ -387,19 +413,13 @@ instance Foldable Arbol where
 --    [8,2,6,4]
 
 -- ---------------------------------------------------------------------
--- Ejercicio 9. Definir la función
---    aplana :: Arbol a -> [a]
--- tal que (aplana a) es la lista obtenida aplanando el árbol a. Por
+-- Ejercicio 12. Definir, usando foldr, la función
+--    aplana' :: Arbol a -> [a]
+-- tal que (aplana' a) es la lista obtenida aplanando el árbol a. Por
 -- ejemplo,
---    aplana (N (N V 2 V) 5 V)  ==  [2,5]
+--    aplana' (N (N V 2 V) 5 V)  ==  [2,5]
 -- ---------------------------------------------------------------------
 
--- 1ª definición
-aplana :: Arbol a -> [a]
-aplana V         = []
-aplana (N i x d) = aplana i ++ [x] ++ aplana d
-
--- 2ª definición
 aplana' :: Arbol a -> [a]
 aplana' = foldr (:) []
 
@@ -413,7 +433,7 @@ prop_aplana a =
 --    +++ OK, passed 100 tests.
 
 -- ---------------------------------------------------------------------
--- Ejercicio 28. Definir la función
+-- Ejercicio 13. Definir la función
 --    todos :: Foldable t => (a -> Bool) -> t a -> Bool
 -- tal que (todos p xs) se verifica si todos los elementos de xs cumplen
 -- la propiedad p. Por ejemplo,

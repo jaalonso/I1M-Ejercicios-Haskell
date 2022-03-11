@@ -20,6 +20,7 @@ dependencies:
   - hspec
   - hspec-core
   - matrix
+  - mtl
   - primes
   - QuickCheck
   - random

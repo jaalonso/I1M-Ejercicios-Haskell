@@ -4,6 +4,7 @@
 -- Universidad de Sevilla
 -- =====================================================================
 
+{-# OPTIONS_GHC -fno-warn-unused-imports #-}
 module Operaciones_conjuntistas_con_listas where
 
 -- ---------------------------------------------------------------------

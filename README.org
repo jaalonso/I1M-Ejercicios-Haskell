@@ -26,6 +26,7 @@ Se puede instalar como se explica en la [[./Instalacion.org][Guía de instalaci�
 
 ** Funciones de orden superior (tema 7)
 + [[./src/Funciones_de_orden_superior_y_definiciones_por_plegados.hs][Funciones de orden superior y definiciones por plegados]].
++ [[./src/Definiciones_por_plegados.hs][Definiciones por plegados]].
 + [[./src/Ecuacion_con_factoriales.hs][Ecuación con factoriales]].
 + [[./src/Enumeraciones_de_los_numeros_racionales.hs][Enumeraciones de los números racionales]].
 

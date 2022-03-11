@@ -4,6 +4,7 @@
 -- Universidad de Sevilla
 -- =====================================================================
 
+{-# OPTIONS_GHC -fno-warn-unused-imports #-}
 module Funciones_de_orden_superior_y_definiciones_por_plegados where
 
 -- ---------------------------------------------------------------------

@@ -53,6 +53,7 @@ Se puede instalar como se explica en la [[./Instalacion.org][Guía de instalaci�
 ** Programas interactivos (tema 13)
 + [[./src/El_juego_del_nim.hs][El juego del nim y las funciones de entrada/salida]].
 + [[./src/Calculo_del_numero_pi_mediante_el_metodo_de_Montecarlo.hs][Cálculo del número pi mediante el método de Montecarlo]].
++ [[./src/Ejercicios_con_IO.hs][Ejercicios con IO]].
 
 * Algorítmica
 

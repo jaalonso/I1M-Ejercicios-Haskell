@@ -1,5 +1,5 @@
 #+OPTIONS: num:t
-
+ 
 Este repositorio contiene las relaciones de ejercicios de programación funcional
 con Haskell usadas en el curso de [[https://jaalonso.github.io/cursos/i1m][Informática]] (de 1º del Grado en Matemáticas de
 la Universidad de Sevilla). Están ordenadas según los [[https://jaalonso.github.io/cursos/i1m/temas.html][temas del curso]].

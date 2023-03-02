@@ -119,34 +119,34 @@ algunoVerifica p c
 
 -- ---------------------------------------------------------------------
 -- Ejercicio 5: Definir la función
---    ponAlaCola :: Cola a -> Cola a -> Cola a
--- tal que (ponAlaCola c1 c2) es la cola que resulta de poner los
+--    extiendeCola :: Cola a -> Cola a -> Cola a
+-- tal que (extiendeCola c1 c2) es la cola que resulta de poner los
 -- elementos de c2 a la cola de c1. Por ejemplo,
---    ponAlaCola ejCola2 ejCola3 == C [17,14,11,8,5,2,10,9,8,7,6,5,4,3]
+--    extiendeCola ejCola2 ejCola3 == C [17,14,11,8,5,2,10,9,8,7,6,5,4,3]
 -- ---------------------------------------------------------------------
 
-ponAlaCola :: Cola a -> Cola a -> Cola a
-ponAlaCola c1 c2
+extiendeCola :: Cola a -> Cola a -> Cola a
+extiendeCola c1 c2
   | esVacia c2 = c1
-  | otherwise  = ponAlaCola (inserta pc2 c1) rq2
+  | otherwise  = extiendeCola (inserta pc2 c1) rq2
   where pc2 = primero c2
         rq2 = resto c2
 
 -- ---------------------------------------------------------------------
 -- Ejercicio 6: Definir la función
---    mezclaColas :: Cola a -> Cola a -> Cola a
--- tal que (mezclaColas c1 c2) es la cola formada por los elementos de
+--    intercalaColas :: Cola a -> Cola a -> Cola a
+-- tal que (intercalaColas c1 c2) es la cola formada por los elementos de
 -- c1 y c2 colocados en una cola, de forma alternativa, empezando por
 -- los elementos de c1. Por ejemplo,
---    mezclaColas ejCola2 ejCola4 == C [17,4,14,3,11,3,8,0,5,10,2,8,3,7,-1,4]
+--    intercalaColas ejCola2 ejCola4 == C [17,4,14,3,11,3,8,0,5,10,2,8,3,7,-1,4]
 -- ---------------------------------------------------------------------
 
-mezclaColas :: Cola a -> Cola a -> Cola a
-mezclaColas c1 c2 = aux c1 c2 vacia
+intercalaColas :: Cola a -> Cola a -> Cola a
+intercalaColas c1 c2 = aux c1 c2 vacia
   where aux d1 d2 c
-            | esVacia d1 = ponAlaCola c d2
-            | esVacia d2 = ponAlaCola c d1
-            | otherwise = aux rd1 rd2 (inserta pd2 (inserta pd1 c))
+            | esVacia d1 = extiendeCola c d2
+            | esVacia d2 = extiendeCola c d1
+            | otherwise  = aux rd1 rd2 (inserta pd2 (inserta pd1 c))
           where pd1 = primero d1
                 rd1 = resto d1
                 pd2 = primero d2
@@ -165,11 +165,11 @@ mezclaColas c1 c2 = aux c1 c2 vacia
 agrupaColas :: [Cola a] -> Cola a
 agrupaColas []            = vacia
 agrupaColas [c]           = c
-agrupaColas (c1:c2:colas) = agrupaColas (mezclaColas c1 c2 : colas)
+agrupaColas (c1:c2:colas) = agrupaColas (intercalaColas c1 c2 : colas)
 
 -- 2ª solución
 agrupaColas2 :: [Cola a] -> Cola a
-agrupaColas2 = foldl mezclaColas vacia
+agrupaColas2 = foldl intercalaColas vacia
 
 -- ---------------------------------------------------------------------
 -- Ejercicio 8: Definir la función

@@ -89,20 +89,24 @@ ramaIzquierda (N1 x i _) = x : ramaIzquierda i
 
 -- ---------------------------------------------------------------------
 -- Ejercicio 1.4. Diremos que un árbol está balanceado si para cada nodo
--- v la diferencia entre el número de nodos (con valor) de sus subárboles
+-- la diferencia entre el número de nodos (con valor) de sus subárboles
 -- izquierdo y derecho es menor o igual que uno.
 --
 -- Definir la función
 --    balanceado :: Arbol1 a -> Bool
 -- tal que (balanceado a) se verifica si el árbol a está balanceado. Por
 -- ejemplo,
---    balanceado (N1 5 H1 (N1 3 H1 H1))           == True
---    balanceado (N1 5 H1 (N1 3 (N1 4 H1 H1) H1)) == False
+--    λ> balanceado (N 5 H (N 3 H H))
+--    True
+--    λ> balanceado (N 5 (N 4 (N 3 (N 2 H H) H) H) (N 6 H (N 7 H (N 8 H H))))
+--    False
 -- ---------------------------------------------------------------------
 
 balanceado :: Arbol1 a -> Bool
 balanceado H1         = True
 balanceado (N1 _ i d) = abs (numeroNodos i - numeroNodos d) <= 1
+                        && balanceado i
+                        && balanceado d
 
 -- (numeroNodos a) es el número de nodos del árbol a. Por ejemplo,
 --    numeroNodos (N1 5 H1 (N1 3 H1 H1)) ==  2
@@ -471,10 +475,10 @@ valor (P1 x y) = valor x * valor y
 --    aplica :: (Int -> Int) -> Expr1 -> Expr1
 -- tal que (aplica f e) es la expresión obtenida aplicando la función f
 -- a cada uno de los números de la expresión e. Por ejemplo,
---    λ> aplica (+2) (s1 (p1 (c1 3) (c1 5)) (p1 (c1 6) (c1 7)))
---    s1 (p1 (c1 5) (c1 7)) (p1 (c1 8) (c1 9))
---    λ> aplica (*2) (s1 (p1 (c1 3) (c1 5)) (p1 (c1 6) (c1 7)))
---    s1 (p1 (c1 6) (c1 10)) (p1 (c1 12) (c1 14))
+--    λ> aplica (+2) (S1 (P1 (C1 3) (C1 5)) (P1 (C1 6) (C1 7)))
+--    S1 (P1 (C1 5) (C1 7)) (P1 (C1 8) (C1 9))
+--    λ> aplica (*2) (S1 (P1 (C1 3) (C1 5)) (P1 (C1 6) (C1 7)))
+--    S1 (P1 (C1 6) (C1 10)) (P1 (C1 12) (C1 14))
 -- ---------------------------------------------------------------------
 
 aplica :: (Int -> Int) -> Expr1 -> Expr1
@@ -591,7 +595,7 @@ sumas (P3 x y) = sumas x + sumas y
 sustitucion :: Expr3 -> [(Char, Int)] -> Expr3
 sustitucion e []          = e
 sustitucion (V3 c) ((d,n):ps)
-  | c == d    = C3 n
+  | c == d                = C3 n
   | otherwise             = sustitucion (V3 c) ps
 sustitucion (C3 n) _      = C3 n
 sustitucion (S3 e1 e2) ps = S3 (sustitucion e1 ps) (sustitucion e2 ps)
@@ -629,9 +633,9 @@ reducible (P3 a b)           = reducible a || reducible b
 --               | R4 Expr4 Expr4
 --               | P4 Expr4 Expr4
 --               | E4 Expr4 Int
---               deriving (Eq, Show)
+--      deriving (Eq, Show)
 -- Por ejemplo, la expresión
---    3*x - (x+2)^7
+--    3*y - (y+2)^7
 -- se puede definir por
 --    R4 (P4 (C4 3) Y) (E4 (S4 Y (C4 2)) 7)
 --
@@ -645,12 +649,12 @@ reducible (P3 a b)           = reducible a || reducible b
 -- ---------------------------------------------------------------------
 
 data Expr4 = C4 Int
-          | Y
-          | S4 Expr4 Expr4
-          | R4 Expr4 Expr4
-          | P4 Expr4 Expr4
-          | E4 Expr4 Int
-          deriving (Eq, Show)
+           | Y
+           | S4 Expr4 Expr4
+           | R4 Expr4 Expr4
+           | P4 Expr4 Expr4
+           | E4 Expr4 Int
+  deriving (Eq, Show)
 
 maximo :: Expr4 -> [Int] -> (Int,[Int])
 maximo e ns = (m,[n | n <- ns, valor4 e n == m])

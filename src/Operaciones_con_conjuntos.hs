@@ -421,7 +421,7 @@ mapC f (Cj xs) = Cj (map f xs)
 -- Ejercicio 16. Definir la función
 --    everyC :: (a -> Bool) -> Conj a -> Bool
 -- tal que (everyC p c) se verifica si todos los elemsntos de c
--- verifican el predicado p.  Por ejmplo,
+-- verifican el predicado p.  Por ejemplo,
 --    everyC even (Cj [2,4..10]) == True
 --    everyC even (Cj [2..10])   == False
 -- ---------------------------------------------------------------------

@@ -89,7 +89,6 @@ library
       Tipos_de_datos
       Tipos_de_datos_algebraicos
       Tipos_de_datos_algebraicos_Arboles_binarios
-      Tipos_de_datos_Spec
       Transacciones
       Vectores_y_matrices
       Vectores_y_matrices_con_las_librerias
@@ -181,6 +180,7 @@ test-suite spec
       Tablas_y_diccionarios_Spec
       Tipos_de_datos_algebraicos_Arboles_binarios_Spec
       Tipos_de_datos_algebraicos_Spec
+      Tipos_de_datos_Spec
       Transacciones_Spec
       Vectores_y_matrices_con_las_librerias_Spec
       Vectores_y_matrices_Spec

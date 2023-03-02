@@ -644,7 +644,7 @@ exprArbitraria n
 
 -- ---------------------------------------------------------------------
 -- Ejercicio 43. Declarar Expr como subclase de Arbitraria usando el
--- generador exprArbitraria-
+-- generador exprArbitraria.
 -- ---------------------------------------------------------------------
 
 instance Arbitrary Expr where

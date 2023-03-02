@@ -257,8 +257,7 @@ prop_recorrido x =
 takeArbol :: Int -> Arbol a -> Arbol a
 takeArbol _ (H x)     = H x
 takeArbol 0 (N x _ _) = H x
-takeArbol n (N x i d) =
-    N x (takeArbol (n-1) i) (takeArbol (n-1) d)
+takeArbol n (N x i d) = N x (takeArbol (n-1) i) (takeArbol (n-1) d)
 
 -- ---------------------------------------------------------------------
 -- Ejercicio 5.2. Comprobar con QuickCheck que la profundidad de

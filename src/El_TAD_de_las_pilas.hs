@@ -9,7 +9,7 @@
 -- ---------------------------------------------------------------------
 
 -- El objetivo de esta relación de ejercicios es definir funciones sobre
--- el tipo abstracto de dato de las pilas, utilizando las
+-- el tipo abstracto de datos de las pilas, utilizando las
 -- implementaciones estudiadas en el tema 14 que se encuentra en
 --    https://jaalonso.github.io/cursos/i1m/temas/tema-14.html
 --

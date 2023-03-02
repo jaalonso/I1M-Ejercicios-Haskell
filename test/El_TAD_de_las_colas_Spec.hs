@@ -36,14 +36,14 @@ spec = do
     it "e2" $
       algunoVerifica (<0) ejCola4 `shouldBe` True
 
-  describe "ponAlaCola" $ do
+  describe "extiendeCola" $ do
     it "e1" $
-      show (ponAlaCola ejCola2 ejCola3)
+      show (extiendeCola ejCola2 ejCola3)
       `shouldBe` "C [17,14,11,8,5,2,10,9,8,7,6,5,4,3]"
 
-  describe "mezclaColas" $ do
+  describe "intercalaColas" $ do
     it "e1" $
-      show (mezclaColas ejCola2 ejCola4)
+      show (intercalaColas ejCola2 ejCola4)
       `shouldBe` "C [17,4,14,3,11,3,8,0,5,10,2,8,3,7,-1,4]"
 
   describe "agrupaColas" $ do

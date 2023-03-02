@@ -11,7 +11,7 @@ module Operaciones_conjuntistas_con_listas where
 -- Introducción                                                       --
 -- ---------------------------------------------------------------------
 
--- En estas relación se definen operaciones conjuntistas sobre listas.
+-- En esta relación se definen operaciones conjuntistas sobre listas.
 
 -- ---------------------------------------------------------------------
 -- § Librerías auxiliares                                             --
